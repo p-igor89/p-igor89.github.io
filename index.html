@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Looking front end position</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/slippry.css" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/preloader.min.js"></script> <!-- preloader -->
+  <script src="js/modernizr.min.js"></script> <!-- modernizr -->
+  <script src="js/slippry.min.js"></script> <!-- sliders -->
+  <script src="js/typed.min.js"></script> <!-- type running line -->
+
+  <script>
+  $(function(){
+      $(".running-line").typed({
+        strings: ["Looking for Junior Front-End position"],
+        typeSpeed: 60,
+		showCursor: false,
+      });
+  });
+  </script>
+  
+ 
+  <script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 800);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+ 
+  <style> [data-sr] { visibility: hidden; }  </style>
+    
+</head>
+<body>
+  <div class="bar"></div>
+				
+		<ul id="slider" style="list-style: none; width: 100%; height: 100%; padding: 0; margin: 0;" class="hde">	
+      <li><img src="img/slide11.jpg"></li>
+      <li><img src="img/slide0.jpg"></li>
+      <li><img src="img/slide2.jpg"></li>          
+		</ul>
+
+		<script>
+			$(function() {
+				var demo1 = $("#slider").slippry({
+					 transition: 'kenburns',
+					 useCSS: true,
+					 speed: 1000,
+					 pause: 9000,
+					 auto: true,
+					 controls: false,
+					 preload: 'visible',
+					 autoHover: false
+				});
+
+			});
+		</script>
+    <!-- end header panel, end bar loader -->
+
+  <div class="container-fluid prx-b" id="header">
+
+    <div class="row">
+
+      <div class="col-sm-4">   
+        <a href="#cd-nav" class="cd-nav-trigger">Menu 
+					<span class="cd-nav-icon"></span>
+
+					<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+						 <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+					</svg>
+	     </a>
+				<div id="cd-nav" class="cd-nav index bgcover">
+
+					<div class="cd-navigation-wrapper bg-xs">
+
+						<div class="cd-half-block">
+							<h2>Menu</h2>
+
+							<nav>
+					<ul class="cd-primary-nav">
+						<li><a href="index.html" class="selected">Home</a></li>
+						<li><a href="about.php">About me</a></li>
+						<li>
+							
+						</li>
+					</ul>
+					<div class="cd-half-block">
+					<address>
+						<div class="dropdown">
+						<button class="dropdown-toggle cd-primary-nav" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Contact information
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li class="email">gamma-beta@hotmail.com</li>
+							<li class="phone">098-548-65-38</li>
+							<li class="skype"><span>p_igor89</span></li>
+						</ul>
+					</div>
+					</address>
+				</div> <!-- end cd-half-block -->
+					</nav>
+						</div><!-- end cd-half-block -->
+
+						
+
+					</div> <!-- end cd-navigation-wrapper -->
+
+				</div> <!-- end cd-nav -->
+    
+  		</div> <!-- end col-sm-4-->
+      <!-- Wrapper solial button -->     
+			<div class="col-sm-4 social no-space z1">
+				<ul class="hde-social">
+					<li class='social-link social-link__in'>
+						<a href="https://ua.linkedin.com/in/igorperetyatko" target="_blank">
+							<img src="sprites/linkedin.png" alt="linkedin">
+						</a>
+					</li>
+					<li class='social-link social-link__git'>
+						<a href="https://github.com/" target="_blank">
+							<img src="sprites/github.png" alt="github">
+						</a>
+					</li>
+					<li class='social-link social-link__fb'>
+						<a href="https://www.facebook.com/igor.peretyatko.1" target="_blank">
+							<img src="sprites/facebook.png" alt="facebook">
+						</a>
+					</li>
+				</ul> <!-- end hde-social -->
+			</div> <!-- end col-sm-4 social no-space z1 -->
+  	</div> <!-- end row -->
+<!-- CV + mice -->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="caption">
+        <h1 class="running-line"></h1>
+          <span class="discription_header">Hello, I'm Igor, specializing in front-end development and digital media.</span>  
+          <p class="m-button"><a href="docs/CV_Peretyatko_Igor.pdf" class="ghost-button" target="_blank">CV</a> 
+
+  <div id="mice">
+    <a href="#scroll">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div>
+        <span class="unu"></span> 
+        <span class="doi"></span>
+      </div>
+    </a>
+  </div> <!-- end mice -->
+                    
+ 		</div> <!-- end caption -->
+ 	</div> <!-- end col-sm-12 -->
+ </div> <!-- end row -->
+ </div> <!-- end header -->
+<!-- Sites and skills -->
+<div class="container-fluid zp">
+  
+<div class="row">
+	<div class="col-sm-6 no-space zpb">
+		<div class="grid">
+			<a href="graphics.html" class="thumb active" title="image">
+				<img src="img/large_nout.jpg" alt="site">
+			</a>
+		</div> <!-- end grid -->
+	</div> <!-- end col-sm-6 no-space -->
+	<div class="col-sm-6 no-space zpb">
+		<div id="slider">
+			<figure id="scroll">
+				<a href="#"><img src="img/slider__little5.jpg" alt="image"></a>
+				<a href="#"><img src="img/slider__little4.jpg" alt="image"></a>
+				<a href="#"><img src="img/slider__little3.jpg" alt="image"></a>
+				<a href="#"><img src="img/slider__little2.jpg" alt="image"></a>
+				<a href="#"><img src="img/slider__little1.jpg" alt="image"></a>
+			</figure> <!-- end scroll -->
+		</div> <!-- end sloder -->
+	</div> <!-- end col-sm-6 no-space -->
+</div> <!-- end row -->
+
+<div class="row">
+	<div class="col-sm-12 bshadow">
+   <div class="row zpb">
+		<div class="col-sm-4 no-space">
+			<div class="grid bgblue">
+			 	<div class="caption">
+			 		<h2>Web</h2>
+				 <span>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, alias ullam! Accusantium placeat provident optio id vero labore nam neque recusandae. Culpa, nesciunt! Facere, dolore. Eum incidunt, est hic asperiores.
+				 </p>
+				 </span>
+			 	</div>
+			</div>
+		</div>
+			
+		<div class="col-sm-4 no-space">
+			<div class="grid bggray">
+			 	<div class="caption">
+				 <h2>Code</h2>
+				 <span>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iusto numquam expedita, omnis explicabo porro hic ducimus quasi doloremque tempore ex tempora, pariatur, quae inventore magni ullam. Accusantium sint, quos.</p>
+				 </span>
+				 </div>
+			</div>
+		</div>
+			
+		<div class="col-sm-4 no-space">
+			<div class="grid bgorange">
+			 	<div class="caption">
+				 <h2>Testing</h2>
+				 <span>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, assumenda, alias! Enim inventore quas minima, quam maiores ipsum neque deleniti vero magnam odio voluptatum doloribus autem sequi, itaque aperiam tempora.
+				 </p>
+				 </span>
+				 </div>
+			</div>
+		</div>
+   	</div> <!-- end col-sm-4 no-space -->
+	</div> <!-- end col-sm-12 n-mar-tb -->
+</div> <!-- end row -->
+
+<div class="row">
+	
+	<div class="col-sm-6 no-space zpb">
+		<div id="slider">
+			<figure id="scroll">
+				<a href="#"><img src="img/slider__little1.jpg" alt="image"></a>
+				<a href="#"><img src="img/slider__little2.jpg" alt="image"></a>
+				<a href="#"><img src="img/slider__little3.jpg" alt="image"></a>
+				<a href="#"><img src="img/slider__little4.jpg" alt="image"></a>
+				<a href="#"><img src="img/slider__little5.jpg" alt="image"></a>
+			</figure> <!-- end scroll -->
+		</div> <!-- end sloder -->
+	</div> <!-- end col-sm-6 no-space -->
+
+	<div class="col-sm-6 no-space zpb">
+		<div class="grid">
+			<a href="graphics.html" class="thumb active" title="image">
+				<img src="img/large_nout1.jpg" alt="site">
+			</a>
+		</div> <!-- end grid -->
+	</div> <!-- end col-sm-6 no-space -->
+	
+</div> <!-- end row -->
+
+</div> <!-- end container-fluid zp -->
+
+
+ <!-- Wrapper skills -->
+<div class="container-fluid" id="technical">
+	<div class="row">
+		<div class="col-sm-3" data-sr="enter bottom over 0.2s">
+			<h2 class="main_skills">Skills</h2>
+		</div>
+		<div class="col-sm-2" data-sr="enter bottom over 0.4s">
+			<img src="sprites/ico-web.png" alt="web">
+				<span>Web</span>
+		</div>
+		<div class="col-sm-2" data-sr="enter bottom over 0.6s">
+			<img src="sprites/ico-coding.png" alt="coding">
+				<span>Coding</span>
+		</div>
+		<div class="col-sm-2" data-sr="enter bottom over 0.8s">
+			<img src="sprites/ico-graphics.png" alt="graphics">
+				<span>Graphics</span>
+		</div>
+		<div class="col-sm-2" data-sr="enter bottom over 1s">
+			<img src="sprites/icon-testing.png" alt="testing">
+				<span>Testing</span>
+		</div>
+	</div> <!-- end row -->
+</div> <!-- end wrapper skills -->
+<!-- Wrapper Urkaine -->
+<div class="container-fluid zpb">
+	<div class="row">
+		<div class="col-sm-12" id="ukraine">
+			<h2>Working Urkaine</h2>
+			<p class="wrap">After been working in the Middle East for almost 6 years in diffrent holding companies in Saudi Arabia as a designer. I'm so blessed to relocate in a wonderful country. I've been so longing to find a job in Australia. Amazing working environment and people! and now i'm practicing my Australian accent mate! :)</p>
+			<p>&nbsp;</p><p>&nbsp;</p>
+			<p data-sr="enter bottom over 0.6s"><img src="img/world-map.png" alt="world map"></p>
+			<p>&nbsp;</p>
+		</div>
+</div> <!-- end row -->
+
+</div>
+<!-- Portfolio -->
+<div class="container-fluid zp">
+	<div class="row">
+    <div class="col-sm-12 p-bottom" id="body">
+    	<p data-sr="enter bottom over 0.6s" class="text-center"><a href="about.php"><img src="img/1.jpg" class="profile" alt="profile" width="150" height="150"></a></p>
+        <p>&nbsp;</p>
+    	<h2 class="text-center">About Me</h2>
+    	<p class="wrap text-center"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas labore, nobis, consequatur rem aperiam molestias vel adipisci modi nam, commodi quaerat sed illum nostrum placeat aliquam aspernatur doloremque explicabo magni!</span><span>Saepe tenetur officiis dignissimos rem enim debitis impedit vero assumenda nisi ab a dolorem, tempora neque nesciunt ipsa veritatis natus quia qui culpa incidunt quasi totam? Dolorum atque, non totam.</span></p>
+    </div> <!-- end col-sm-12 p-bottom -->
+	</div> <!-- end row -->
+
+<!-- Footer -->
+<div class="row zp" id="footer">
+	<div class="col-md-4 pad">
+		<p>2016 © Peretyatko Igor</p>
+	</div>
+	<div class="col-md-4 pad socialbot">
+		<ul class="hde-social">
+			<li class='social-link social-link__in'>
+				<a href="https://ua.linkedin.com/in/igorperetyatko" target="_blank">
+					<img src="sprites/linkedin_blue.png" alt="linkedin">
+				</a>
+			</li>
+			<li class='social-link social-link__git'>
+				<a href="https://github.com/" target="_blank">
+					<img src="sprites/github_blue.png" alt="github">
+				</a>
+			</li>
+			<li class='social-link social-link__fb'>
+				<a href="https://www.facebook.com/igor.peretyatko.1" target="_blank">
+					<img src="sprites/facebook_blue.png" alt="facebook">
+				</a>
+			</li>
+		</ul> <!-- end hde-social -->
+	</div> <!-- end social -->
+</div> <!-- end footer -->
+	<div class="row">
+
+	<div class="col-sm-12 disclaimer">
+		<p class="wrap">THIS IS A PERSONAL ONLINE PORTFOLIO</p>
+	</div>
+
+	</div> <!-- footer discriprion -->
+</div> <!-- end container-fluid zp footer -->
+
+<p id="back-top"><a href="#top"><span></span></a></p>
+
+<!-- Resource jQuery -->
+<script src="js/main.js"></script>
+<script src="js/scrollReveal.min.js?ver=2.1.0"></script>
+<script src="js/parallax.js" defer></script>
+
+<script type="text/javascript">
+      (function($) {
+        'use strict';
+        window.sr= new scrollReveal({
+          reset: false,
+          move: '50px',
+          mobile: false
+        });
+      })();
+</script>
+
+</body>
+</html>
