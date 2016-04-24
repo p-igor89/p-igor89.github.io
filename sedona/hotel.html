@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+	<link type="text/css" href="./style/style.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="./js/jquery.js"></script>
+	<title>search</title>
+	
+	<script>
+		
+		/* slider for search */
+		$(document).ready(function(){
+			$(".modal_content_head").click(function() {
+				$(".modal_content").fadeIn(1000);
+				$(".modal_content_main").slideToggle("slow");
+			});
+		});
+		
+	</script>
+</head>
+<body class="wrapper">
+<!-- Header -->
+  <header class="header">
+    <div class="conteiner clearfix">
+     <nav class="menu">
+       <div class="top_page_logo"></div>
+        <ul>
+          <li class="left"><a href="index.html#information">Информация</a></li>
+          <li class="left"><a href="index.html#video">Фото и Видео</a></li>
+          <li class="right"><a href="#hotel">Гостиници</a></li>
+          <li class="right"><a href="index.html#map">Карта Штата</a></li>
+        </ul>
+      </nav>
+		</div>
+	</header> 
+<!-- end Header -->	
+<!-- more information -->
+	<div class="more-information__image conteiner clearfix" >
+		<form action="URL" id="hotel">
+			<div class="wrap-infrastructure">
+				<p>Инфраструктура:</p>
+				<input type="checkbox" name="remember" id="pool">
+				<label for="pool">Бассейн</label><br>
+				<input type="checkbox" name="remember" id="park">
+				<label for="park">Парковка</label><br>
+				<input type="checkbox" name="remember" id="wi_fi">
+				<label for="wi_fi">Wi-Fi</label>
+			</div><!-- end wrap-infrastructure -->
+			<div class="wrap-house">
+				<p>Тип жилья:</p>
+				<input type="checkbox" name="remember" id="hostel">
+				<label for="hostel">Гостиница</label><br>
+				<input type="checkbox" name="remember" id="motel">
+				<label for="motel">Мотель</label><br>
+				<input type="checkbox" name="remember" id="apartment">
+				<label for="apartment">Апартаменты</label>
+			</div><!-- end wrap-house -->
+			<div class="wrap-costs">
+				<p>Стоимость в сутки (Р):</p>
+				<div class="range-filter">
+					<div class="price-controls">
+							<input class="min-price" type="text" placeholder="ОТ 0">
+							<input class="max-price" type="text" placeholder="ДО 3000">
+						</div>
+					<div class="range-controls">
+						<div class="scale"><div style="width=70%;" class="bar"></div>
+						</div>
+						<div class="toggle min-toggle"></div>
+						<div class="toggle max-toggle"></div>
+					</div>
+				</div>
+			</div><!-- end wrap-costs -->
+		</form>
+	</div>
+<!-- end more information -->
+
+<!-- Sorting -->
+	<div class="conteiner sorting clearfix">
+		<div class="sorting-header clearfix">
+			<h2>Найдено: 3</h2>
+			<p>Сортировка:</p>
+			<ul>
+				<li><a href="" class="active">по цене</a></li>
+				<li><a href="">по типу</a></li>
+				<li><a href="">по рейтингу</a></li>
+			</ul>
+			<div class="click-sorting">
+				<a href="#" class="active">
+					<img src="../sedona/sprites/strel_black_up.png" alt="up">
+				</a>
+				<a href="#">
+					<img src="../sedona/sprites/strel_blue_down.png" alt="down">
+				</a>
+			</div> <!-- end click-sorting -->
+		</div>
+		<div class="wrapper-for-one-hotel clearfix">
+			<div class="wrap-img">
+				<img src="../sedona/img/picture1.jpg" alt="photo">
+			</div>
+			<div class="detain-information">
+				<h2>Amara Resort & Spa</h2>
+				<div class="detain-information_about">
+					<p>Гостиница</p>
+					<p>от 3500р</p>
+				</div>
+				<form action="URL">
+					<button type="submit" class="btn btn-blue">Подробнее</button>
+					<button type="submit" class="btn btn-grey">Забронировать</button>
+		 		</form>
+			</div>
+			<div class="reiting">
+				<img src="../sedona/sprites/fore_stars.png" alt="stars">
+				<button type="submit" disabled="disabled" class="btn btn-blue">Рейтинг: 8.5</button>
+			</div> <!-- end reiting -->
+		</div>
+		<hr>
+		<div class="wrapper-for-one-hotel clearfix">
+			<div class="wrap-img">
+				<img src="../sedona/img/picture2.jpg" alt="photo">
+			</div>
+			<div class="detain-information">
+				<h2>Desert Quail Inn</h2>
+				<div class="detain-information_about">
+					<p>Мотель</p>
+					<p>от 2000р</p>
+				</div>
+				<form action="URL">
+					<button type="submit" class="btn btn-blue">Подробнее</button>
+					<button type="submit" class="btn btn-grey">Забронировать</button>
+		 		</form>
+			</div>
+			<div class="reiting">
+				<img src="../sedona/sprites/two_stars.png" alt="stars">
+				<button type="submit" disabled="disabled" class="btn btn-blue">Рейтинг: 8.9</button>
+			</div> <!-- end reiting -->
+		</div>
+		<hr>
+		<div class="wrapper-for-one-hotel clearfix">
+			<div class="wrap-img">
+				<img src="../sedona/img/picture3.jpg" alt="photo">
+			</div>
+			<div class="detain-information">
+				<h2>Villas at Poco Diablo</h2>
+				<div class="detain-information_about">
+					<p>Апартаменты</p>
+					<p>от 4000р</p>
+				</div>
+				<form action="URL">
+					<button type="submit" class="btn btn-blue">Подробнее</button>
+					<button type="submit" class="btn btn-grey">Забронировать</button>
+		 		</form>
+			</div>
+			<div class="reiting">
+				<img src="../sedona/sprites/three_stars.png" alt="stars">
+				<button type="submit" disabled="disabled" class="btn btn-blue">Рейтинг: 9.2</button>
+			</div> <!-- end reiting -->
+		</div>
+		<hr>
+	</div> <!-- end wrapper-for-one-hotel -->
+<!-- end sorting -->
+
+<!-- Footer -->
+	<div class="main_footer conteiner clearfix">
+    <div class="left_content_footer footer">
+      <h2>#visitSEDONA</h2>
+    </div>
+    <div class="middle_content_footer footer">
+      <a href="" class="social_btn social_btn_tw">Twitter</a>
+      <a href="" class="social_btn social_btn_fb">Facebook</a>
+      <a href="" class="social_btn social_btn_youtube">YouTube</a>
+    </div>
+    <div class="right_content_footer footer">
+     <ul>
+       <li><a href="#">WEBSITE by</a></li>
+       <li class="last_li"><a href="#">FOR</a></li>
+     </ul>
+    </div>
+  </div>
+<!-- end Footer --> 
+</body>
+</html>

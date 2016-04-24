@@ -1,19 +1,9 @@
 /* fonts panel */
-@font-face {
-    font-family: 'BebasNeueRegular';
-    src: url(font/BebasNeueRegular.ttf);
-		src: url(font/BebasNeueRegular.otf);
-		font-weight: normal;
-    font-style: normal;
-}
-
 
 @font-face {
     font-family:'HelveticaLTStd-Roman';
     src: url('font/HelveticaLTStd-Roman.eot');
     src: url('font/HelveticaLTStd-Roman.eot?#iefix') format('embedded-opentype'),
-         url('font/HelveticaLTStd-Roman.woff') format('woff'),
-         url('font/HelveticaLTStd-Roman.ttf') format('truetype'),
          url('font/HelveticaLTStd-Roman.svg#HelveticaLTStd-Roman') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -21,7 +11,7 @@
 
 /* global panel */
 body { background-color: #fff; font-family: "HelveticaLTStd-Roman", Arial, sans-serif; font-size: 18px; color: #4c4c4c; -webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */ -moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */ }
-h1 { font-family: "BebasNeueRegular", Arial, sans-serif; font-size: 42px;}
+h1 { font-family: "Oswald", Arial, sans-serif; font-size: 42px;}
 a:hover, a:active, a:focus { outline: 0; color: #fff; text-decoration: none; }
 .m-button { margin-top: 5em; } .m-button-top { margin-top: 1.58em; } .p-bottom { padding-bottom: 3em; } .p-bottom-5 { padding-bottom: 6em !important; } .m-img-top { margin-top: 1.4em; }
 .padl1 { padding-left: 2em !important; }
@@ -106,11 +96,16 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
 }
 
 .bgblue { background-color: #0daad0; }
-.bgorange { background-color: #f16529; }
+.bgorange { background-color: #f16529;}
 .bggray { background-color: #3f3f3f; } .gray {  color: #3f3f3f}
 .bgwhite { background-color: #fff!important; }
 	
-
+.bgblue, .bgorange, .bggray {
+	height: 250px;
+}
+.bggray span p, .bgblue span p{
+	padding-top: 30px;
+}
 .social { position: absolute; right: 4.1%; margin-top: 3em; text-align: right; }
 .social ul, .socialbot ul { padding: 0; margin: 0; } .social li { list-style-type: none; display: inline; text-align: right;  } .social li:first-child, .socialbot li:first-child { margin-left: 0; cursor: pointer;}
 
@@ -144,9 +139,9 @@ a .sociconbot { color: #242424;  }  a:hover .sociconbot { color: #f16529; }
 .form-control, .btn { border-radius: 0!important; box-shadow: none !important}
 input, textarea { -moz-border-radius: 0px; border-radius: 0px; -webkit-appearance: none; -moz-appearance: none;}
 .text-danger { font-size: 12px!important;  margin-top: 0.5em; } .alert-success { font-size: 14px!important; text-align: center!important; }
-.btn-default { background-color: #18aacf; border: 0; color: #fff; font-family: "BebasNeueRegular", Arial, sans-serif; font-size: 30px; padding: 0.3em 1em 0.2em 1em; }
+.btn-default { background-color: #18aacf; border: 0; color: #fff; font-family: "Oswald", Arial, sans-serif; font-size: 30px; padding: 0.3em 1em 0.2em 1em; }
 
-#technical { text-align: center; padding-top: 2em; padding-bottom: 2em; margin-top: -0.05em; z-index: 3; position: relative;} #technical h1 { color:#fff; margin-top: 0.8em;}  #technical img { margin-top: 1em; } #technical span { display: block; font-size: 1.5em; color: #fff; font-family: "BebasNeueRegular", Arial, sans-serif; text-align: center; margin-top: 0.3em; }
+#technical { text-align: center; padding-top: 2em; padding-bottom: 2em; margin-top: -0.05em; z-index: 3; position: relative;} #technical h1 { color:#fff; margin-top: 0.8em;}  #technical img { margin-top: 1em; } #technical span { display: block; font-size: 1.5em; color: #fff; font-family: "Oswald", Arial, sans-serif; text-align: center; margin-top: 0.3em; }
 #ukraine { text-align: center; padding-top: 2em; padding-bottom: 4em; } #ukraine h1 { color:#18aacf;} #ukraine img { max-width: 100%; }
 #body {background-color: #f5f5f5; text-align: justify;} #body h1 { color:#18aacf;}  #body a { color: #242424; } #body a:hover { color: #f46518; }
 	#body .profile { margin-top: -5em; border-radius: 50%;}
@@ -491,7 +486,7 @@ width: 22px;
 
 h2 {
 	color: #337ab7;
-  font-family: "BebasNeueRegular", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 42px;
 }
 .main_skills {
@@ -622,7 +617,7 @@ h2 {
   color: #fff;
   text-transform: uppercase;
   text-align: left;
-  font-family: "BebasNeueRegular", Arial, sans-serif; font-size: 32px !important;
+  font-family: "Oswald", Arial, sans-serif; font-size: 32px !important;
 }
 
 .cd-nav .cd-primary-nav {
@@ -721,8 +716,8 @@ h2 {
 	-webkit-box-shadow: 39px 46px 174px 13px rgba(168,193,219,1);
 	-moz-box-shadow: 39px 46px 174px 13px rgba(168,193,219,1);
 	box-shadow: 39px 46px 174px 13px rgba(168,193,219,1); 
-	left: 20px;
-  top: 60px;
+	left: 300px;
+  top: -37px;
 	
 }
 .dropdown-toggle {
@@ -829,7 +824,9 @@ h2 {
 
  .running-line, .discription_header {
 	 text-shadow: 4px 2px black; color: #ece2ca;
+	 z-index: 50;
 }
+
 .running-line {
 	padding-bottom: 50px;
 }
@@ -855,6 +852,26 @@ h2 {
   background: none;
   text-decoration: none;
   opacity: 0.8;
+}
+.ghost-button-sub:hover, .ghost-button-sub:active {
+    color: #f16529;
+    border: 1px solid #f16529;
+    background: none;
+    text-decoration: none;
+}
+.ghost-button-sub {
+    color: #4c4c4c;
+    background: none;
+    border: 1px solid #4c4c4c;
+    font-size: 16px;
+    padding: 9px 30px;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "HelveticaLTStd-Roman", Arial, sans-serif;
+    min-width: 120px;
+    text-transform: uppercase;
+    display: inline-block;
 }
 
 /* Scroll Top Panel */
@@ -893,5 +910,10 @@ h2 {
 	background-color: none;
 
 }
-
+.ml10 {
+	margin: 0 10px 0;
+} 
+.mt10 {
+	margin-top: 10px;
+}
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2),	only screen and (min-device-pixel-ratio: 1.5) {

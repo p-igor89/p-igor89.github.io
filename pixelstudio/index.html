@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixelstudio</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="./css/reset.css" rel="stylesheet" />
+	<link href="./css/grid.css" rel="stylesheet" />
+	<link href="./css/style.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	
+	<!--fancyBox -->
+	<link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <!--end fancyBox -->
+    
+  <!--slider -->
+	<script src="./slider/jquery.flexslider-min.js"></script>
+	<link href="./slider/flexslider.css" rel="stylesheet" />
+  <!--end slider -->
+	<script>
+	$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				pauseOnHover: true,
+				prevText: "",
+				nextText: ""
+			});
+			$(".fancybox").fancybox({
+				padding: 4
+			});
+	});
+
+	$(document).ready(function(){
+		$(".menu").on("click","a", function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+		});
+	});	
+
+
+	$(document).ready(function(){
+		$(".tabs__content .three-col:nth-child(4n+4)").css("margin","0");
+	});		
+			
+	(function($) {
+		$(function() {
+    var a = $('ul.tabs_nav').find('a');
+    a.click(function(e){
+		e.preventDefault();
+	});
+     
+  $('ul.tabs_nav').on('click', 'li:not(.active)', function() {
+    $(this).addClass('active').siblings().removeClass('active').closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  });
+	});
+	})(jQuery);
+    </script>
+</head>
+<body class="main_body">
+ 
+  <!--header -->
+ 
+  <header class="header">
+   	<div class="layout">
+      <div class="twelve-col">
+        <label class="hamburger" for="ham_input">MENU</label>
+        <input type="checkbox" class="ham_input" name="ham_input" id="ham_input" />
+        <a href="#" class="logotip pull-left">Pixelstudio</a>
+      <nav class="menu">
+          <ul class="nav pull-right">
+           <li class="active">
+              <a href="#ex1">Home</a>
+            </li>
+            <li>
+             <a href="#ex2">Portfolio</a>
+            </li>
+            <li>
+              <a href="#ex3">My work</a>
+            </li>
+            <li>
+              <a href="#ex4">About me</a>
+            </li>
+            <li>
+             <a href="#ex5">Elements</a>
+            </li>
+            <li>
+              <a href="#ex6">Contact</a>
+            </li>
+            
+          </ul>
+      </nav> 
+    </div><!--twelve-col-->
+    </div><!--layout -->
+	</header>
+  	<div class="head_bot_bg"></div> <!--.line_after_header-->
+  	
+  <!--first_block --> 
+	<div class="content clearfix"><section id="ex1"></section>
+  	<div class="layout">
+  		<div class="twelve-col">
+  			<h2 class="big-text">Welcome !</h2>
+  			<hr class="tb" />
+  		</div> <!--.twelve-col-->
+  		<div class="six-col">
+				<h2>Welcome to <span>Pixelstudio</span> !</h2>
+				<p>Sed sed mollis neque. Integer ac libero ligula, sit amet volutpat magna. Maecenas tincidunt nulla iaculis massa ultricies facilisis. Curabitur sagittis cursus dolor, a tempor mauris sagittis ac. Pellentesque pharetra mattis urna, sit amet euismod nunc egestas ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<p>Nulla fringilla tempus quam, ut ornare erat volutpat a. Cras porttitor lacus et diam aliquet hendrerit. Donec vitae tellus nec nibh bibendum tincidunt et auctor erat. Aliquam erat mauris, faucibus ultricies condimentum adipiscing, bibendum eu nulla.</p>
+		</div>
+			<div class="six-col">
+				 <div class="border">
+					<div class="flexslider">
+							<ul class="slides">
+									<li>
+											<img alt="text" src="./img/slider/slider1.jpg"/>
+									</li>
+									<li>
+											<img alt="text" src="./img/slider/slider2.jpg"/>
+									</li>
+									<li>
+											<img alt="text" src="./img/slider/slider3.jpg"/>
+									</li>
+									<li>
+											<img alt="text" src="./img/slider/slider4.jpg"/>
+									</li>
+							</ul>
+					</div>
+					</div>
+			</div>
+			<div class="twelve-col">
+					<hr class="grey_line" />
+			</div>
+			<div class="four-col">
+					<h3 class="ico ico1">What I do</h3>
+					<p>Donec neque libero, tincidunt ultrices tristique et, rhoncus et lacus. Phasellus varius felis nec erat malesuada dignissim. Sed aliquet, risus eu malesuada tempus.</p>
+			</div>
+			<div class="four-col">
+					<h3 class="ico ico2">How I do it</h3>
+					<p>Etiam ligula ante, ullamcorper vel luctus feugiat, dignissim sit amet odio. Suspendisse ultricies risus a quam tincidunt et tristique ipsum hendrerit.</p>
+			</div>
+			<div class="four-col">
+					<h3 class="ico ico3">About me</h3>
+					<p>Nunc luctus purus ac eros interdum ullamcorper. Pellentesque ut dolor nulla. Nunc et massa arcu, at bibendum velit. Sed ut lacus non elit tempor dignissim. Donec nibh tellus</p>
+			</div>
+			<div class="twelve-col">
+					<hr class="bt" />
+			</div><!--.twelve-col-->
+  	</div><!--end layout -->
+  </div> <!--end first_block -->
+	
+	<!--second_block -->
+	
+	<div class="content clearfix"><section id="ex2"></section>
+		<div class="layout">
+				<div class="twelve-col">
+					<h2 class="big-text">Portfolio</h2>
+      		<hr class="tb" />
+				</div><!--.twelve-col-->
+			<div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_1.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_1.jpg" alt="" /></a>
+        </div>
+        </div>
+      <div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_2.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_2.jpg" alt="" /></a>
+        </div>
+        </div>
+       <div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_3.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_3.jpg" alt="" /></a>
+        </div>
+			</div>
+     	<div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_4.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_4.jpg" alt="" /></a>
+        </div>
+      </div>
+     	<div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_5.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_5.jpg" alt="" /></a>
+        </div>
+      </div> 
+     	<div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_6.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_6.jpg" alt="" /></a>
+        </div>
+      </div> 
+     	<div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_7.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_7.jpg" alt="" /></a>
+        </div>
+      </div>
+     	<div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_8.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_8.jpg" alt="" /></a>
+        </div>
+      </div>
+     	<div class="four-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big1_9.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little1_9.jpg" alt="" /></a>
+        </div>
+      </div>
+      <div class="twelve-col">
+        <hr class="bt" />
+      </div><!--.twelve-col-->   		
+		</div><!--.layout -->
+	</div><!--.nd second_block -->
+	
+	<!--third_block -->
+
+	<div class="content clearfix work"><section id="ex3"></section>
+		<div class="layout">
+      <div class="twelve-col">
+        <h2 class="big-text">My work</h2>
+        <hr class="tb" />
+      </div><!--.twelve-col-->
+      <div class="twelve-col navigation_third_block">
+      <div class="tabs clearfix">
+      <ul class="twelve-col tabs__caption clearfix tabs_nav">
+						<li class="active"><a href="#">Design</a></li>
+						<li><a href="#">Print</a></li>
+						<li><a href="#">Logo</a></li>
+						<li><a href="#">Illustration</a></li>
+			</ul>
+
+     <div class="twelve-col tabs__content active clearfix">
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_1.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_1.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_2.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_2.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_3.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_3.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_4.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_4.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_5.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_5.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_6.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_6.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_7.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_7.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_8.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_8.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_9.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_9.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_10.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_10.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+					<div class="border shadow">
+						<a href="../pixelstudio/img/big_page/big_2_11.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_11.jpg" alt="" /></a>
+					</div> 
+				</div>
+				<div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_12.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_12.jpg" alt="" /></a>
+        </div> 
+      </div>
+      </div><!--tabs__content-->
+		 <div class="twelve-col tabs__content">
+			<div class="three-col">
+        <div class="border shadow ">
+          <a href="../pixelstudio/img/big_page/big_2_5.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_5.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_6.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_6.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_7.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_7.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_8.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_8.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_9.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_9.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_10.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_10.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_11.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_11.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_12.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_12.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_1.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_1.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_2.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_2.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_3.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_3.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_4.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_4.jpg" alt="" /></a>
+        </div> 
+      </div>
+		</div><!--tabs__content-->
+		 <div class="twelve-col tabs__content">
+			<div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_2.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_2.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_3.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_3.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_4.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_4.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_5.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_5.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_6.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_6.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_7.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_7.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_8.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_8.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_9.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_9.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_10.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_10.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_11.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_11.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_12.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_12.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_1.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_1.jpg" alt="" /></a>
+        </div> 
+      </div>
+		</div>
+		 <div class="twelve-col tabs__content">
+			<div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_12.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_12.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_11.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_11.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_10.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_10.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_9.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_9.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_8.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_8.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_7.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_7.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_6.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_6.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_5.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_5.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_4.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_4.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_3.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_3.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_2.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_2.jpg" alt="" /></a>
+        </div> 
+      </div>
+      <div class="three-col">
+        <div class="border shadow">
+          <a href="../pixelstudio/img/big_page/big_2_1.jpg" class="fancybox" rel="group"  ><img src="../pixelstudio/img/little_page/little_2_1.jpg" alt="" /></a>
+        </div> 
+      </div>
+			</div> <!--tabs__content-->
+			<div class="twelve-col">
+      	<hr class="bt" />
+      </div><!--end twelve-col-->
+      </div><!--end tabs-->
+			</div><!--end twelve-col-->
+		</div><!--end layout -->
+	</div><!--end third_block -->
+	<!--fourth_block -->
+	
+	<div class="content clearfix"><section id="ex4"></section>
+		<div class="layout">
+      <div class="twelve-col">
+        <h2 class="big-text">About me</h2>
+        <hr class="tb" />
+      </div><!--twelve-col-->
+      <div class="eight-col">
+      	<p class="big-letter">Nam imperdiet faucibus orci ut vestibulum. Cras ut tellus ac leo blandit convallis a vitae odio. Integer molestie varius hendrerit. Ut lacinia eleifend dolor ut luctus. Sed euismod quam congue est congue lacinia. Aliquam quam augue, fringilla faucibus consequat vitae, mollis ac nulla. Nunc at urna enim, non mollis mi. Nunc eget magna mauris. Aenean elit ligula, dignissim;</p>
+				<p class="step25px">Quisque cursus libero ante, a pellentesque massa. Vestibulum et dolor ut est tincidunt aliquam. Aliquam nunc velit, ornare eu porta et, volutpat sit amet arcu. Quisque vel risus dolor. Sed blandit, sapien ac tempus faucibus, lectus massa tincidunt tortor, a commodo risus orci gravida tortor</p>
+			<h2>Pellentesque eu metus est, id accumsan leo</h2>
+				<p>Nulla facilisi. Nam sagittis pretium iaculis. Curabitur egestas mattis dui, vitae ultricies tortor facilisis vel. Phasellus et cursus enim. Maecenas vel porta magna. Curabitur at elit ut lacus luctus mattis. Sed nibh quam, blandit vitae feugiat eu, gravida a elit. Donec commodo laoreet venenatis. Curabitur eget augue augue, in pellentesque arcu. Phasellus eget turpis nec lorem sagittis sagittis.</p>
+			<h2>Morbi viverra, neque quis</h2>
+				<p>Cras feugiat rutrum leo, at viverra nisl ornare quis. Maecenas quis quam justo. Proin molestie, massa lacinia pharetra aliquam, eros nunc ultricies magna, sit amet molestie ligula nulla vitae arcu. Donec commodo laoreet venenatis. Curabitur eget augue augue, in pellentesque arcu. Phasellus eget turpis nec lorem sagittis sagittis. Quisque porta fringilla quam, a volutpat justo imperdiet non.</p>
+			<h3>Some styled typography</h3>
+				<div class="bottom_conteiner">
+				<p>Sed adipiscing lorem massa, in aliquet lectus. Nunc mollis mauris vitae est vestibulum mattis. Nunc lacus magna, aliquet sit amet elementum at, iaculis ac lacus. Maecenas et interdum erat. Sed augue dolor, fermentum ut commodo quis.</p>
+				<p class="second_bottom_conteiner">Nam bibendum, purus sit amet convallis tempor, dolor lorem ullamcorper eros, vitae dapibus justo diam a elit. Duis at massa nulla, eget consequat velit. Nulla auctor, mauris eu mattis gravida, lorem neque posuere eros, quis vehicula mauris. </p>
+				<p class="third_bottom_conteiner">Praesent in tellus in urna fermentum lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla tempus pretium lorem, semper laoreet mi ornare sagittis. Id placerat leo dictum non.</p>
+				<p class="four_bottom_conteiner">Aliquam aliquam mattis varius. Fusce interdum mi nec lacus pellentesque adipiscing. Sed in augue non massa elementum rhoncus quis quis eros. Quisque viverra, dolor eu eleifend elementum, elit massa aliquam lectus, in varius odio lacus a justo.</p>
+		</div>
+      </div><!--eight-col-->
+      <div class="four-col">
+        <h2>From Flickr</h2>
+        <div class="border_without_shadow">
+					<a href="../pixelstudio/img/big_page/big3_1.jpg" class="fancybox" rel="group">
+						<img src="../pixelstudio/img/little_page/little3_1.jpg" alt="" /></a>
+        </div>
+        <div class="border_without_shadow">
+          <a href="../pixelstudio/img/big_page/big3_2.jpg" class="fancybox" rel="group">
+          <img src="../pixelstudio/img/little_page/little3_2.jpg" alt="" /></a>
+        </div>
+        <div class="third border_without_shadow">
+          <a href="../pixelstudio/img/big_page/big3_3.jpg" class="fancybox" rel="group">
+          <img src="../pixelstudio/img/little_page/little3_3.jpg" alt="" /></a>
+        </div>
+        <div class="border_without_shadow">
+          <a href="../pixelstudio/img/big_page/big3_4.jpg" class="fancybox" rel="group">
+          <img src="../pixelstudio/img/little_page/little3_4.jpg" alt="" /></a>
+        </div>
+        <div class="border_without_shadow">
+          <a href="../pixelstudio/img/big_page/big3_5.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little3_5.jpg" alt="" /></a>
+        </div>
+        <div class="third border_without_shadow">
+          <a href="../pixelstudio/img/big_page/big3_6.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little3_6.jpg" alt="" /></a>
+        </div>
+        <div class="border_without_shadow">
+          <a href="../pixelstudio/img/big_page/big3_7.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little3_7.jpg" alt="" /></a>
+        </div>
+        <div class="border_without_shadow">
+          <a href="../pixelstudio/img/big_page/big3_8.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little3_8.jpg" alt="" /></a>
+        </div>
+        <div class="third border_without_shadow">
+          <a href="../pixelstudio/img/big_page/big3_9.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little3_9.jpg" alt="" /></a>
+        </div>
+        </div><!--end four-col-->
+        <div class="four-col">
+        	<div class="links_fourth_block">
+					<h2>Links</h2>
+					  <ul>
+							<li><a href="#">Themeforest</a></li>
+							<li><a href="#">GraphicRiver</a></li>
+							<li><a href="#">CodeCanyon</a></li>
+							<li><a href="#">ActiveDen</a></li>
+							<li><a href="#">3DOcean</a></li>
+							<li><a href="#">VideoHive</a></li>
+							<li><a href="#">Audiojungle</a></li>
+						</ul>
+				  </div>
+        </div><!--end four-col-->
+
+		<div class="twelve-col">
+      	<hr class="bt" />
+      </div><!--end twelve-col-->
+		</div><!--end layout -->
+	</div><!--end fourth_block -->
+
+	<!--fifth_block -->	
+	
+	<div class="content clearfix"><section id="ex5"></section>
+		<div class="layout">
+      <div class="twelve-col">
+        <h2 class="big-text">Elements &amp; classes</h2>
+        <hr class="tb" />
+      </div><!--end twelve-col-->
+      <div class="fourth_block eight-col">
+      	<p class="big-letter">Donec vel est elit. Morbi augue enim, lobortis a commodo vitae, sodales in arcu. Suspendisse dapibus lacinia sem at molestie. Sed auctor tempus ullamcorper. Ut sed bibendum odio. Quisque tincidunt luctus convallis. Morbi tincidunt egestas risus, non tincidunt gilla, nibh at scelerisque luctus, dui diam vestibulum justo, et venenatis nulla lectus in ligula. Ut in enim sapien, quis tempus nisi. Ut odio erat, tincidunt vitae aliquam at, vehicula eu purus. Maecenas nisl velit, ultricies vel fringilla sed, aliquam sed massa. Duis dignissim purus at sem dapibus pulvinar. Etiam eget mauris semper sem consequat commodo. Etiam tortor purus, tristique congue faucibus vel, tempor nec urna. Aliquam commodo, est sed cursus pellentesque.</p>
+      	<h2>Some additional text, this is another header</h2>
+      	<p>Nulla facilisi. Nam sagittis pretium iaculis. Curabitur egestas mattis dui, vitae ultricies tortor facilisis vel. Phasellus et cursus enim. Maecenas vel porta magna. Curabitur at elit ut lacus luctus mattis. Sed nibh quam, blandit vitae feugiat eu, gravida a elit</p>
+      	<ul>
+					<li>Praesent molestie sapien sed arcu tempor vitae congue metus ultricies.</li>
+					<li>Proin blandit arcu lacinia eros feugiat gravida.</li>
+					<li>Curabitur sodales auctor arcu, eget tempus nisi lacinia at.</li>
+				</ul>	
+					<p>Nunc eleifend, ante a vestibulum ultricies, neque sapien vulputate velit, eu ultrices orci velit ac turpis. Morbi id augue ac lorem dapibus aliquet id eu sem. Sed sed magna ac erat dignissim.</p>
+					<ol>
+						<li>Morbi nec leo a lectus elementum accumsan nec a enim.</li>
+						<li>Nunc dignissim ante nec eros rhoncus volutpat.</li>
+						<li>Proin blandit arcu lacinia eros feugiat gravida.</li>
+					</ol>
+					<h2>This is an h2 header</h2>
+							<p>Quisque pretium, nulla non venenatis pharetra, dui mauris interdum massa, eu lobortis ipsum justo et orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					<h3>This is an h3 header</h3>
+							<p>Aliquam convallis tincidunt nisl vel dictum. Mauris rhoncus purus nec eros hendrerit sit amet feugiat augue venenatis. Pellentesque quis justo aliquet urna luctus aliquet at a dolor.</p>
+					<h4>This is an h4 header</h4>
+							<p>Proin molestie molestie iaculis. Nunc iaculis condimentum massa. Etiam aliquam diam in est luctus et pellentesque dui pharetra. Morbi lobortis massa at eros pharetra id egestas neque pretium.</p>
+					<h5>THIS IS AN H5 HEADER</h5>
+							<p>Proin molestie molestie iaculis. Nunc iaculis condimentum massa. Etiam aliquam diam in est luctus et pellentesque dui pharetra. Morbi lobortis massa at eros pharetra id egestas neque pretium.</p>
+			</div> <!-- end eight-col -->
+			<div class="four-col">
+				<div class="border shadow quotes">
+          <a href="../pixelstudio/img/big_page/big_4_1.jpg" class="fancybox" rel="group"><img src="../pixelstudio/img/little_page/little_4_1.jpg" alt="" /></a>
+			  </div>
+			  <div class="name_for_quotes">
+			  	<h2>Testimonials</h2>
+			  </div>
+			  <p class="icons-quote paragraph"><i>Duis pulvinar blandit tempus. Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam. Proin mollis, ipsum vitae.</i></p>
+				<p class="rotate paragraph mb25">John Doe, <span class="colortext"><a href="https://ru.wikipedia.org/wiki/American_Broadcasting_Company">Company ABC</a></span></p>
+				<p class="icons-quote paragraph"><i>Basellus nec nunc vel erat tincidunt posuere. Nulla pulvinar nulla sit amet nunc ornare tempor. Nulla id neque eros.</i> </p>
+				<p class="rotate paragraph">John Doe, <span class="colortext"><a href="https://ru.wikipedia.org/wiki/American_Broadcasting_Company">Company ABC</a></span></p>
+				<p class="icons-quote paragraph"><i>Donec tincidunt dolor sed augue fermentum et tempor lorem malesuada. Fusce ultricies, sem semper eleifend lobortis, eros erat consectetur.</i></p>
+				<p class="rotate paragraph">John Doe, <span class="colortext"><a href="https://ru.wikipedia.org/wiki/American_Broadcasting_Company">Company ABC</a></span></p>
+	    </div><!--end four-col -->
+					<div class="main_textbox">
+				  <div class="textbox">
+					<h3><b>This is a textbox</b></h3>
+					<p><b>Duis pulvinar blandit tempus.</b> Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam.</p>
+					<p><b>In velit nisi, iaculis in aliquet eget,</b> fermentum non orci. Ut commodo pharetra dui lacinia vulputate. Mauris et ante tortor. Fusce quis dui sit amet risus mattis elementum quis sit amet lectus.</p>
+				 </div><!--end textbox -->	
+			   </div><!--end four-col -->
+		  <div class="twelve-col">
+      	<hr class="bt" />
+      </div><!--end twelve-col-->
+		</div><!--end layout -->
+	</div><!--end fifth_block -->	
+	
+	<!--six_block -->	
+	
+		<div class="content clearfix"><section id="ex6"></section>
+		<div class="layout">
+      <div class="twelve-col">
+        <h2 class="big-text">Contact</h2>
+        <hr class="tb" />
+      </div><!--end twelve-col-->
+				<div class="eight-col six_block">
+					<p class="text_for_contact">Donec vel est elit. Morbi augue enim, lobortis a commodo vitae, sodales in arcu. Suspendisse dapibus lacinia sem at molestie. Sed auctor tempus ullamcorper. Ut sed bibendum odio. Quisque tincidunt luctus convallis.</p>
+					<div class="conteiner_for_send_contact">
+							<form action="URL" method="post">
+								<div class="for_contact">
+									<p>Name</p>
+									<input type="text" required>
+								</div>
+								<div class="for_contact">
+									<p>Email</p>
+									<input type="email" required>
+								</div>
+								<div class="for_contact message">
+									<p>Message</p>
+									<textarea name="coment" id="textarea" cols="100" rows="100" maxlength="1000"></textarea>
+								</div>
+								<div class="conteiner_for_button clearfix">
+									<input type="reset" value="RESET"/>
+									<input type="submit" value="SEND">
+								</div>
+							</form>
+						</div>
+			  </div><!--end eight-col -->
+			  <div class="four-col contact">
+			  	<h2>Contact informations</h2>
+						<p>Feel free to contact us for any of your projects, we’ll gat back to you as soon as possible !</p>
+						<div class="contact_information">
+							<p class="icon-mail">Company name</p>
+							<p class="icon">789 Street name</p>
+							<p class="icon">999 00 City name, Country</p>
+							<p class="icon-comment-inv-alt">Phone : +000 987 654 321</p>
+							<p class="icon">Fax : +000 123 456 789</p>
+							<p class="icon-pencil-alt">Email : <span class="colortext"> sales@yourcompany.com</span></p>
+						</div>
+			  </div>
+    <div class="twelve-col">
+      <hr class="bt" />
+    </div><!--end twelve-col-->
+		</div><!--end layout -->
+	</div><!--end six_block -->	
+	
+	<!--footer -->	
+	
+  <footer class="footer">
+   	<div class="layout">
+      <div class="main_footer twelve-col">
+      	<div class="left_footer four-col">
+      		<h2>Social networks</h2>
+      		<p>For all news and updates, join us on the social networks and stay tuned ! </p><br>
+					<a href="#" class="social_btn social_btn_fb">Фейсбук</a>
+							<a href="#" class="social_btn social_btn_tw">Твиттер</a>
+							<a href="#" class="social_btn social_btn_dot">Two dots</a>
+							<a href="#" class="social_btn social_btn_ins">Instagram</a>
+							<a href="#" class="social_btn social_btn_bbb">ВВВ</a>
+      	</div><!--end four-col  -->
+      	<div class="middle_footer four-col">
+      		<h2>Freelance work</h2>
+      		<p>I'm currently available for freelance work, I can design for you a brand new website or create an awesome logo.</p>
+					<p>Just <span class="colortext">drop me an email</span> to get in touch !</p>
+      	</div><!--end four-col  -->
+      	<div class="four-col float-right">
+      		<p>This theme uses 100% valid <br><span class="colortext"><a href="https://ru.wikipedia.org/wiki/HTML">HTML</a></span> and <span class="colortext"><a href="https://ru.wikipedia.org/wiki/CSS">CSS</a></span></p>
+					<p>Copyright © 2010 Pixelstudio</p>
+      	</div><!--end four-col  -->
+			</div><!--end twelve-col-->
+	  </div><!--end layout -->
+	</footer><!--end footer-->      
+	
+</body>
+</html>

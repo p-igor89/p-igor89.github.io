@@ -1,0 +1,158 @@
+.layout {
+    width: 840px;
+    margin: 0 auto;
+}
+.one-col, .two-col, .three-col, .four-col, .five-col, .six-col, .seven-col, .eight-col, .nine-col, .ten-col, .eleven-col, .twelve-col {
+	clear: none;
+	display: inline;/* IE double margin fix. Feel free to move this to your IE specific stylesheets. */
+	float: left;
+	margin: 0 10px 0 10px;
+	padding: 0;
+	position: relative;
+}
+.one-col {
+	width: 50px;
+}
+
+.two-col {
+	width: 120px;
+}
+
+.three-col {
+	width: 190px;
+}
+
+.four-col {
+	width: 260px;
+}
+
+.five-col {
+	width: 330px;
+}
+
+.six-col {
+	width: 400px;
+}
+
+.seven-col {
+	width: 470px;
+}
+
+.eight-col {
+	width: 540px;
+}
+
+.nine-col {
+	width: 610px;
+}
+
+.ten-col {
+	width: 680px;
+}
+
+.eleven-col {
+	width: 750px;
+}
+
+.twelve-col {
+	width: 820px;
+}
+
+.prefix-one {
+	margin-left: 70px;
+}
+
+.prefix-two {
+	margin-left: 140px;
+}
+
+.prefix-three {
+	margin-left: 210px;
+}
+
+.prefix-four {
+	margin-left: 280px;
+}
+
+.prefix-five {
+	margin-left: 350px;
+}
+
+.prefix-six {
+	margin-left: 420px;
+}
+
+.prefix-seven {
+	margin-left: 490px;
+}
+
+.prefix-eight {
+	margin-left: 560px;
+}
+
+.prefix-nine {
+	margin-left: 630px;
+}
+
+.prefix-ten {
+	margin-left: 700px;
+}
+
+.prefix-eleven {
+	margin-left: 770px;
+}
+
+.suffix-one {
+	margin-right: 90px;
+}
+
+.suffix-two {
+	margin-right: 160px;
+}
+
+.suffix-three {
+	margin-right: 230px;
+}
+
+.suffix-four {
+	margin-right: 300px;
+}
+
+.suffix-five {
+	margin-right: 370px;
+}
+
+.suffix-six {
+	margin-right: 440px;
+}
+
+.suffix-seven {
+	margin-right: 510px;
+}
+
+.suffix-eight {
+	margin-right: 580px;
+}
+
+.suffix-nine {
+	margin-right: 650px;
+}
+
+.suffix-ten {
+	margin-right: 720px;
+}
+
+.suffix-eleven {
+	margin-right: 790px;
+}
+
+.clear { /* Useful generic clearing class. */
+	clear: both;
+}
+.clearfix::after {
+    content: "\0020";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}

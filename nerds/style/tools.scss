@@ -1,0 +1,24 @@
+ @mixin button($color: #fb565a, $width: 140px, $height: 37px) {
+     background: $color;
+     display: inline-block;
+     margin: 4px;
+     width: $width;
+     height: $height;
+     text-align: center;
+     line-height: $height;
+     border-radius: 4px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: $height *0.35;
+     border: 1px solid #bcbcbc;
+     box-shadow: 0 0 5px #eee;
+     font-family: Roboto, sans-serif;
+     color: #e9f8f0;
+    
+     &:hover {
+         background: darken($color, 20%);}
+        
+     &:active {
+         background: darken($color, 10%);
+     }
+ }

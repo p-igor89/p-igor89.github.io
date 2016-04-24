@@ -1,0 +1,898 @@
+.main_body {
+	background: #000 url(../img/backgraund.jpg) no-repeat center top fixed;
+	color: #f7f4f1; 
+	font-size: 14px;
+  	line-height: 24px;
+  	font-family: "PT Sans Narrow", sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	min-width: 960px;
+    margin: 0;
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.main_header {
+	padding-top: 3px;
+	background: #000;
+    margin-bottom: 25px;
+    height: 78px;
+}
+.conteiner {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.menu {
+  float: left;
+  width: 700px;
+  position: relative;
+  display: block;
+}
+.enter {
+	float: right;
+	width: 100px;
+}
+.menu li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+    
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+.menu a {
+  display: block;
+  padding: 25px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.menu a:hover {
+  background-color: #616060;
+}
+.menu .menu_active a:hover {
+  background: none;
+}
+.menu .menu_active a {
+  position: relative;
+}
+.menu .menu_active a:after {
+  content: "";
+  position: absolute;  
+  background: white;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+  height: 5px;
+}
+.login {
+  display: block;
+  padding: 25px 20px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.login:hover {
+  background-color: #575655;
+}
+.enter a {
+  padding-left: 52px;
+}
+
+.enter a:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 27px;
+  left: 20px;
+  background-image: url(../img/sprites/sprites.png);
+  background-repeat: no-repeat;
+  display: block;
+  color: white;
+  background-position: -10px -119px;
+  opacity: .3;
+}
+.enter a:hover:before {
+  opacity: 1;
+}
+.logotip {
+    margin: 10px auto 10px auto;
+    width: 368px;
+    height: 204px;
+}
+.box_for_items {
+    margin: 10px auto 85px auto;
+}
+.box_item {
+    position: relative;
+    float: left;
+    max-width: 300px;
+    margin: 5px 7px 20px 7px;
+    text-align: center;
+}
+.box_for_items:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.box_title {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 42px;
+}
+.box_item:last-child {
+   margin-right: 0;
+}
+.main_content {
+    margin: 0 auto;
+    margin-bottom: 33px;
+    background-image: url(../img/main_fone.png);
+}
+.news {
+    float: left;
+    padding: 54px 70px;
+    width: 316px;
+    color: black;
+}
+.middle {
+    float: left;
+    padding: 0;
+    vertical-align: middle;
+}
+.gallery {
+    float: right;
+    width: 316px;
+    padding: 54px 80px;
+}
+.img_gallery img {
+    border: 7px solid #ffffff;
+    margin-bottom: 37px;
+}
+.second_content {
+    background-image: url(../img/main_fone.png);
+    margin: 0 auto;
+    margin-bottom: 63px;
+    color: black;
+}
+.left_content {
+    float: left;
+    width: 312px;
+    padding: 54px 72px;
+}
+.left_content p {
+    margin-bottom: 40px;
+}
+.right_content p {
+    margin-bottom: 32px;
+}
+.right_content {
+    float: right;
+    width: 320px;
+    padding: 54px 78px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+h2 {
+    margin: 0px;
+    margin-bottom: 40px;
+    color: black;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 33px;
+  margin-right: 16px;
+  font-size: 14px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn feadback {
+    margin-right: 0px;
+}
+.time {
+    display: block;
+    margin-bottom: 27px;
+    opacity: .5;
+    text-transform: lowercase;
+}
+.main_footer {
+    margin: 0 auto;
+    background: #000 url(../img/footer.png) ;
+}
+.footer_contacts {
+    float: left;
+    width: 300px;
+    margin-bottom: 62px;
+    margin-top: 62px;
+    margin-right: 80px;
+}
+.footer_network {
+    float: left;
+    width: 180px;
+    margin-bottom: 62px;
+    margin-top: 62px;
+    text-align: center;
+}
+.footer_site {
+    float: right;
+    margin-bottom: 62px;
+    margin-top: 62px;
+    max-width: 320px;
+    text-align: center;
+}
+.footer_site .btn {
+    margin-right: 0px;
+}
+.social_btn {
+  margin: 0 2px;
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  font-size: 0px;
+  text-decoration: none;
+  background: #000 url(../img/sprites/sprites.png) no-repeat center;
+}
+.social_btn_inst {
+    background-position: 1px -292px;
+}
+.social_btn_fb {
+    background-position: 5px -146px;
+}
+
+.social_btn_vk {
+  background-position: -3px -362px;
+}
+
+.social_btn:hover {
+    background-color: #fff;
+}
+.social_btn_inst:hover {
+  background-position: 5px -328px;
+}
+.social_btn_fb:hover {
+    background-position: 9px -183px;
+}
+
+.social_btn_vk:hover {
+  background-position: 2px -392px;
+}
+
+.footer_site .btn:hover {
+  color: #000;
+  background: #fff;
+}
+.box_title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.gallery_prev {
+    width: 140px;
+    margin-right: 15px;
+}
+.gallery_next {
+    width: 140px;
+}
+.driver {
+    width: 140px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.feadback {
+    width: 140px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 0px;
+}
+.right_content input {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 106px;
+  padding: 10px 15px;
+  border: 2px solid #000;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
+  background: #f9f6f3;
+  outline: none;
+}
+button.btn.send {
+    margin-top: 13px;
+    width: 300px;
+}
+/* Modal content*/
+
+.modal_content {
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-top: 150px;
+  margin-left: -230px; 
+  background:  #f7f5f1 url(../img/modal_content.png) no-repeat;
+  padding: 60px 80px;
+  color: black;
+}
+.modal_content_close {
+  position: absolute;
+  right: -50px;
+  top: 0px;
+  width: 21px;
+  height: 21px;
+  font-size: 0px;
+  background: #030303 url(../img/sprites/sprites.png) no-repeat center; 
+  background-position: -10px -42px;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.modal_content .btn {
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+}
+.modal_content h2{
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+.modal_content p {
+  margin: 0;
+}
+.modal_content .form {
+  margin-bottom: 10px;
+  margin-top: 28px;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
+  border: 2px solid #000;
+  outline: none;
+  background: #f9f6f3;
+}
+
+.form input:focus {
+  border-color: #663d15;
+}
+
+.form input.icon_user {
+  background-image: url(../img/sprites/sprites.png);
+  background-repeat: no-repeat;
+  background-position: 100% -251px;
+}
+
+.form input.icon_password {
+  background-image: url(../img/sprites/sprites.png);
+  background-repeat: no-repeat;
+  background-position: 100% -217px;
+}
+
+.forget_password {
+  float: right;
+}
+
+
+.form [type="checkbox"] {
+  display: none;
+}
+
+.form [type="checkbox"] + label {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: top;
+  padding-left: 30px;
+}
+
+.form [type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+}
+
+.form [type="checkbox"]:checked + label::before {
+  background: url(../img/sprites/sprites.png) no-repeat;
+  background-position: -8px -7px;
+}
+
+.form [type="checkbox"] + label:hover {
+  color: #663d15;
+}
+
+
+/* prise_list */
+.prise_list {
+  background: #f8f3f0 url(../img/price_fone.jpg) repeat;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-width: 960px;
+  margin: 0;
+}
+
+.prise_list .main_header {
+  padding-top: 0px;
+}
+
+.prise_footer {
+  color: white;
+}
+
+.footer_network p,
+.footer_site p {
+  margin-bottom: 10px;
+}
+
+.main_page_title h1 {
+  margin-top: 55px;
+}
+
+.main_page_title_input li{
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+  padding-left: 0px;
+}
+.main_page_title_input {
+  padding-left: 0px;
+  margin-bottom: 55px;
+}
+
+.main_page_title_input li:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  width: 8px;
+  height: 8px;   
+  background: #000;
+  transform: rotate(45deg);
+}
+
+.main_page_title_input .current:after {
+  display: none;
+}
+
+.main_page_title_input a {
+  text-decoration: none;
+  color: black;
+}
+
+.prise_content h2{
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.big_heading h2 {
+  margin: 0 auto;
+  position: relative;
+  display: inline;
+  margin: 0;
+  padding: 0 25px;   
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;  
+  background: #f8f3f0 url(../img/price_fone.jpg) repeat;
+  z-index:2; 
+}
+
+.big_heading:after {
+  content: "";   
+  position: relative;
+  top: -25px;
+  display: block;
+  border-bottom: 2px solid black;
+  z-index: 1;
+}
+
+.big_heading {
+  margin-top: 55px;
+  margin-bottom: 65px; 
+  text-align: center;
+}
+
+.prise_content_column_left {
+  float: left;
+  width: 300px;
+}
+
+.prise_content_column_right {
+  float: right;
+  width: 460px;
+}
+
+.prices_table tr td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 460px;
+  padding: 9px 0;
+}
+
+.prices_table td:first-child {
+  padding-left: 20px;
+}
+
+.prices_table td:last-child {
+  text-align: center;
+}
+
+.custom_list_1 {
+  padding-left: 0px;
+}
+
+.custom_list_1 li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  list-style: none;
+}
+.custom_list_1 ul {
+  padding-left: 0px;
+}
+
+.custom_list_1 li:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;  
+  background: #000;
+  transform: rotate(45deg);
+}
+
+.custom_list_1 li:last-child {
+  margin-bottom: 60px;
+}
+
+.inner-content-columns h2 {
+  margin-bottom: 30px;
+}
+
+.inner-content-column-left {
+  float: left;
+  width: 400px;
+  margin-right: 80px;
+}
+
+.inner-content-column-right {
+  float: left;
+  width: 380px;
+}
+
+.inner-content-column-right p {
+  margin-bottom: 80px;
+}
+
+/* Товары */
+
+.goods_main_content {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.content_left_information {
+  width: 460px;
+  float: left;
+  margin-right: 90px;
+  margin-bottom: 84px;
+}
+
+.content_right_information {
+  width: 390px;
+  float: left;
+  display: block
+}
+.content_left_information img {
+  margin-right: 17px;
+  margin-top: 17px;
+  box-shadow: 0 30px 50px rgba(0,0,0,.4);
+}
+
+.content_left_information img:nth-child(1) {
+  margin-top: none;
+}
+
+.goods {
+	background: #f9f6f3 url(../img/price_fone.jpg) no-repeat center top fixed;
+	font-size: 14px;
+  	line-height: 24px;
+  	font-family: "PT Sans Narrow", sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	min-width: 960px;
+    margin: 0;
+}
+
+.content_right_information h2 {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.content_right_information h3 {
+  font-size: 24px;
+}
+
+.information_about_goods {
+  margin: 0 30px;
+}
+.set_goods {
+  padding-left: 0px;
+}
+
+.set_goods li{
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.set_goods *:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    transform: rotate(45deg);
+}
+
+.content_right_information .set_header {
+  margin: 27px 0px;
+}
+
+.information_about_good {
+  margin-top: 28px;
+}
+
+.vendor_code {
+  display: inline-block;
+}
+.vendor_code p {
+  position: absolute;
+  float: left;
+  width: 300px
+}
+
+.vendor_code p:last-child {
+  position: relative;
+  right: -260px;
+  opacity: .4;
+}
+
+.costs {
+  position: relative;
+  float: left;
+  width: 190px;
+}
+
+.costs ul {
+  padding-left: 0px;
+}
+
+.costs li {
+  display: inline-block; 
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.costs li:first-child {
+  background: #e5e5e5;
+  padding: 12px 0px;
+  font-size: 14px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  width: 108px;
+}
+.costs .buy {
+  float: left;
+  padding-left: 19px;
+  padding-right: 19px;
+  position: absolute;
+  right: -14px;
+
+}
+
+
+/* Главный каталог */ 
+
+.main_catalog {
+  background: #f8f3f0 url(../img/price_fone.jpg) repeat;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-width: 960px;
+  margin: 0;
+}
+
+.left_column_shop {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+}
+
+.right_column_shop {
+  float: left;
+  width: 700px;
+}
+
+.for_all_columns {
+  background: #f8f8f8;
+  margin-right: 13px;
+  margin-bottom: 20px;
+  float: left;
+  box-shadow: 0 30px 50px rgba(0,0,0,.2);
+}
+
+.for_all_columns p {
+  padding-left: 17px;
+}
+
+.for_all_columns .none {
+  text-transform: none;
+}
+
+.for_all_columns .costs {
+  padding-left: 16px;
+}
+
+.shop_tree_box,
+.shop_six_box{
+  margin-right: 0px;
+}
+
+.number_page ul {
+  padding-left: 0px;
+}
+
+.number_page li{
+  display: inline-block;
+  float: left;
+  width: 43px;
+  height: 43px;
+  margin-right: 7px;
+  margin-bottom: 47px;
+  margin-top: 24px;
+}
+
+.number_page .active {
+  background-color: white;
+  text-align: center; 
+  vertical-align: top;
+  vertical-align: middle;
+  line-height: 43px; 
+}
+
+.number_page a {
+    display: inline-block;
+    min-width: 43px;
+    height: 43px;
+    line-height: 43px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    background: black;
+}
+
+.manufacturers [type="checkbox"] + label {
+  padding-left: 45px;
+}
+.manufacturers [type="checkbox"] + label {
+  position: relative;
+  margin-bottom: 17px;
+}
+
+.name_group {
+  margin-top: 23px;
+}
+
+.main_page_prise_list h1 {
+  margin-top: 55px;
+}
+
+.form [type="radio"] {
+  display: none;
+}
+
+.form [type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: top;
+  padding-left: 30px;
+  max-width: 200px;
+  margin-bottom: 17px;
+}
+
+.form [type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.form [type="radio"]:checked + label::before {
+  background: url(../img/sprites/circle.png) no-repeat;
+  background-position: center;
+}
+
+.form [type="radio"] + label:hover {
+  color: #663d15;
+}
+.form [type="radio"] + label {
+  padding-left: 45px;
+  margin-bottom: 16px;
+}

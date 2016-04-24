@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" href="./style/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <title>Sedona</title>
+  
+  
+	<script>
+		
+		/* slider for search */
+		$(document).ready(function(){
+			$(".modal_content_head").click(function() {
+				$(".modal_content").fadeIn(1000);
+				$(".modal_content_main").slideToggle("slow");
+			});
+		});
+		
+	</script>
+  
+</head>
+<body class="wrapper">
+ <!-- Header -->
+   <header class="header">
+    <div class="conteiner clearfix">
+     <nav class="menu">
+       <div class="top_page_logo"></div>
+        <ul>
+          <li><a href="#information">Информация</a></li>
+          <li><a href="#video">Фото и Видео</a></li>
+          <li class="right"><a href="#map">Карта Штата</a></li>
+          <li class="right"><a href="hotel.html#hotel">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="main_image">
+        <div class="text_main_image"></div>
+        <!-- Intro -->
+          <div class="intro conteiner">
+            <div class="line_for_intro"></div>
+            <div class="bottom_intro">
+             <div class="information_bottom_intro">
+              <h2 id="information">СЕДОНА — небольшой городок в АРИЗОНЕ, 
+        зАСЛУЖИвающий большего!</h2>
+              <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
+        </p>
+             </div>
+            </div>
+          </div>
+      </div>
+    </div>
+ </header> 
+  <!-- Native_house -->
+  
+  <div class="native_house conteiner" id="video">
+    <div class="native_house_content">
+      <h2>НАСТОЯЩИЙ <br>
+      ГОРОДОК
+      </h2>
+      <h3>№1</h3>
+      <p>СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+    </div>
+    <div class="native_house_image"></div>
+  </div>
+  
+  <div class="information_about conteiner clearfix">
+    <div class="first_information about">
+      <h2>Жилье</h2>
+      <p>Рекомендуем пожить в настоящем <br>
+      мотеле, все как в кино!</p>
+    </div>
+    <div class="second_information about">
+      <h2>ЕДА</h2>
+      <p>Всегда заказывай ФИРМЕННЫЙ БУРГЕР,<br>
+      Вы НЕ разочаруетесь!</p>
+    </div>
+    <div class="third_information about">
+      <h2>СУВЕНИРЫ</h2>
+      <p>Не только китайского,<br>
+       но и местного производства!</p>
+    </div>
+  </div>
+  
+  <div class="bridge_heal conteiner">
+    <div class="bridge_heal_image"></div>
+    <div class="bridge_heal_content">
+      <h2>ТАМ ЕСТЬ <br>
+      Мост дьявола
+      </h2>
+      <h3>№2</h3>
+      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    </div>
+  </div>
+  
+  <div class="information_about conteiner clearfix">
+    <div class="first_information_about bridge about">
+      <h2>НЕБОЛЬШАЯ <br>
+      ПЛОЩАДЬ
+      </h2>
+      <h3>№3</h3>
+      <p>ВСЕ достопримеча-тельности находятся очень близко</p>
+    </div>
+    <div class="second_information_about bridge about">
+      <h2>КРАСИВАЯ <br>ДОРОГА
+      </h2>
+      <h3>№4</h3>
+      <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+    </div>
+    <div class="third_information_about bridge about">
+      <h2>МАЛО <br>ТУРИСТОВ</h2>
+      <h3>№5</h3>
+      <p>Большинство едет в гранд каньон и толпится там</p>
+    </div>
+  </div>
+  
+  <!-- Search -->
+  
+  <div class="search conteiner" id="map">
+    <div class="search_content">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки<br> 
+и мы покажем вам лучшие предложения гостиниц в седоне</p>
+     <div class="modal_content">
+    <div class="modal_content_head">
+      <h2>Поиск гостиницы в седоне</h2>
+    </div>
+    <div class="modal_content_main">
+      <form action="URL" method="post">
+       <table class="table_for_search">
+         <tr>
+           <td>Дата заезда:</td>
+           <td colspan="3">
+             <input type="data" name="check_in" placeholder="24 Апреля 2014">
+           </td>
+         </tr>
+         <tr>
+           <td>Дата Выезда:</td>
+           <td colspan="3">
+             <input type="data" name="check_out" placeholder="24 Апреля 2014">
+           </td>
+         </tr>
+         <tr>
+           <td style="padding: 0px">Взрослыe:</td>
+           <td>
+             <input type="number" name="adults" value="5">
+           </td>
+           <td>Дети:</td>
+           <td>
+            <input type="number" name="children" value="5" class="input" style="float: right">
+           </td>    
+         </tr>
+         <tr>
+           <td colspan="4" style="padding-bottom: px">
+             <button type="submit" class="btn">Найти</button>
+           </td>
+         </tr>
+       </table>
+         
+      </form>
+    </div>
+  </div>
+    </div>
+    <div class="map">
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.4493995169305!2d-117.03975126455813!3d34.89517009600543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c47b87489d7269%3A0xc5a80bee29117ca6!2sMojave+Ford+%26+Nissan+of+Barstow!5e0!3m2!1sru!2sru!4v1459257776148" width="1200" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+      
+       <!-- Footer -->
+     
+      <div class="main_footer conteiner clearfix">
+    <div class="left_content_footer footer">
+      <h2>#visitSEDONA</h2>
+    </div>
+    <div class="middle_content_footer footer">
+      <a href="" class="social_btn social_btn_tw">Twitter</a>
+      <a href="" class="social_btn social_btn_fb">Facebook</a>
+      <a href="" class="social_btn social_btn_youtube">YouTube</a>
+    </div>
+    <div class="right_content_footer footer">
+     <ul>
+       <li><a href="#">WEBSITE by</a></li>
+       <li class="last_li"><a href="#">FOR</a></li>
+     </ul>
+    </div>
+  </div>
+  </div>
+  
+
+  
+</body>
+</html>

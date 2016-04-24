@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Looking front end position</title>
+  <title>Looking for HTML coder position</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <link rel="shortcut icon" href="img/favicon.png">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/slippry.css" />
   
@@ -15,13 +16,13 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/preloader.min.js"></script> <!-- preloader -->
   <script src="js/modernizr.min.js"></script> <!-- modernizr -->
-  <script src="js/slippry.min.js"></script> <!-- sliders -->
+  <script src="js/slippry.min.js"></script>  <!-- sliders --> 
   <script src="js/typed.min.js"></script> <!-- type running line -->
 
   <script>
   $(function(){
       $(".running-line").typed({
-        strings: ["Looking for Junior Front-End position"],
+        strings: ["Looking for HTML coder position"],
         typeSpeed: 60,
 		showCursor: false,
       });
@@ -54,9 +55,9 @@
   <div class="bar"></div>
 				
 		<ul id="slider" style="list-style: none; width: 100%; height: 100%; padding: 0; margin: 0;" class="hde">	
-      <li><img src="img/slide11.jpg"></li>
-      <li><img src="img/slide0.jpg"></li>
-      <li><img src="img/slide2.jpg"></li>          
+      <li><img src="img/slide1.jpg"></li>
+      <li><img src="img/slide2.jpg"></li>
+      <li><img src="img/slide3.jpg"></li>          
 		</ul>
 
 		<script>
@@ -72,6 +73,15 @@
 					 autoHover: false
 				});
 
+			});
+			
+				$(window).scroll(function() {
+    			if ($(window).scrollTop() > 430) {
+        		$('.m-button, #mice').css('opacity', '0');
+    			}
+    			else {
+        		$('.m-button, #mice').css('opacity', '1');
+    			}
 			});
 		</script>
     <!-- end header panel, end bar loader -->
@@ -98,10 +108,7 @@
 							<nav>
 					<ul class="cd-primary-nav">
 						<li><a href="index.html" class="selected">Home</a></li>
-						<li><a href="about.php">About me</a></li>
-						<li>
-							
-						</li>
+						<li><a href="#about-me">About me</a></li>
 					</ul>
 					<div class="cd-half-block">
 					<address>
@@ -154,7 +161,7 @@
     <div class="col-sm-12">
       <div class="caption">
         <h1 class="running-line"></h1>
-          <span class="discription_header">Hello, I'm Igor, specializing in front-end development and digital media.</span>  
+          <span class="discription_header">Hello, I'm Igor and here presented some of my practical works which has been done during my studying and growing as a front-end developer. I'll appreciate any comments to code and feel free to contact me.</span>  
           <p class="m-button"><a href="docs/CV_Peretyatko_Igor.pdf" class="ghost-button" target="_blank">CV</a> 
 
   <div id="mice">
@@ -179,7 +186,7 @@
 <div class="row">
 	<div class="col-sm-6 no-space zpb">
 		<div class="grid">
-			<a href="graphics.html" class="thumb active" title="image">
+			<a href="web.html" class="thumb active" title="image">
 				<img src="img/large_nout.jpg" alt="site">
 			</a>
 		</div> <!-- end grid -->
@@ -187,11 +194,11 @@
 	<div class="col-sm-6 no-space zpb">
 		<div id="slider">
 			<figure id="scroll">
-				<a href="#"><img src="img/slider__little5.jpg" alt="image"></a>
-				<a href="#"><img src="img/slider__little4.jpg" alt="image"></a>
-				<a href="#"><img src="img/slider__little3.jpg" alt="image"></a>
-				<a href="#"><img src="img/slider__little2.jpg" alt="image"></a>
-				<a href="#"><img src="img/slider__little1.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little5.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little4.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little3.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little2.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little1.jpg" alt="image"></a>
 			</figure> <!-- end scroll -->
 		</div> <!-- end sloder -->
 	</div> <!-- end col-sm-6 no-space -->
@@ -205,8 +212,7 @@
 			 	<div class="caption">
 			 		<h2>Web</h2>
 				 <span>
-				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, alias ullam! Accusantium placeat provident optio id vero labore nam neque recusandae. Culpa, nesciunt! Facere, dolore. Eum incidunt, est hic asperiores.
-				 </p>
+				 <p>Typeset adaptive and static sites, landing, html-writing and promo sites. Also, change the code in the ready sites</p>
 				 </span>
 			 	</div>
 			</div>
@@ -217,7 +223,7 @@
 			 	<div class="caption">
 				 <h2>Code</h2>
 				 <span>
-				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iusto numquam expedita, omnis explicabo porro hic ducimus quasi doloremque tempore ex tempora, pariatur, quae inventore magni ullam. Accusantium sint, quos.</p>
+				 <p>Some of my projects are handcoded with HTML5, CSS3, Responsive Frameworks (Bootstrap), Jquery and basic JS</p>
 				 </span>
 				 </div>
 			</div>
@@ -228,7 +234,8 @@
 			 	<div class="caption">
 				 <h2>Testing</h2>
 				 <span>
-				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, assumenda, alias! Enim inventore quas minima, quam maiores ipsum neque deleniti vero magnam odio voluptatum doloribus autem sequi, itaque aperiam tempora.
+				 <p>Performed different types of testing (black box, smoke, exploratory, ad-hoc, regression, etc);<br>
+					Performed cross-browser (IE, Firefox, Chrome, Opera, Safari) testing;
 				 </p>
 				 </span>
 				 </div>
@@ -243,18 +250,18 @@
 	<div class="col-sm-6 no-space zpb">
 		<div id="slider">
 			<figure id="scroll">
-				<a href="#"><img src="img/slider__little1.jpg" alt="image"></a>
-				<a href="#"><img src="img/slider__little2.jpg" alt="image"></a>
-				<a href="#"><img src="img/slider__little3.jpg" alt="image"></a>
-				<a href="#"><img src="img/slider__little4.jpg" alt="image"></a>
-				<a href="#"><img src="img/slider__little5.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little1.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little2.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little3.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little4.jpg" alt="image"></a>
+				<a href="web.html"><img src="img/slider__little5.jpg" alt="image"></a>
 			</figure> <!-- end scroll -->
 		</div> <!-- end sloder -->
 	</div> <!-- end col-sm-6 no-space -->
 
 	<div class="col-sm-6 no-space zpb">
 		<div class="grid">
-			<a href="graphics.html" class="thumb active" title="image">
+			<a href="web.html" class="thumb active" title="image">
 				<img src="img/large_nout1.jpg" alt="site">
 			</a>
 		</div> <!-- end grid -->
@@ -266,6 +273,8 @@
 
 
  <!-- Wrapper skills -->
+				
+		
 <div class="container-fluid" id="technical">
 	<div class="row">
 		<div class="col-sm-3" data-sr="enter bottom over 0.2s">
@@ -294,9 +303,8 @@
 	<div class="row">
 		<div class="col-sm-12" id="ukraine">
 			<h2>Working Urkaine</h2>
-			<p class="wrap">After been working in the Middle East for almost 6 years in diffrent holding companies in Saudi Arabia as a designer. I'm so blessed to relocate in a wonderful country. I've been so longing to find a job in Australia. Amazing working environment and people! and now i'm practicing my Australian accent mate! :)</p>
 			<p>&nbsp;</p><p>&nbsp;</p>
-			<p data-sr="enter bottom over 0.6s"><img src="img/world-map.png" alt="world map"></p>
+			<p data-sr="enter bottom over 0.6s"><img src="img/world_map.gif" alt="world map"></p>
 			<p>&nbsp;</p>
 		</div>
 </div> <!-- end row -->
@@ -308,8 +316,11 @@
     <div class="col-sm-12 p-bottom" id="body">
     	<p data-sr="enter bottom over 0.6s" class="text-center"><a href="about.php"><img src="img/1.jpg" class="profile" alt="profile" width="150" height="150"></a></p>
         <p>&nbsp;</p>
-    	<h2 class="text-center">About Me</h2>
-    	<p class="wrap text-center"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas labore, nobis, consequatur rem aperiam molestias vel adipisci modi nam, commodi quaerat sed illum nostrum placeat aliquam aspernatur doloremque explicabo magni!</span><span>Saepe tenetur officiis dignissimos rem enim debitis impedit vero assumenda nisi ab a dolorem, tempora neque nesciunt ipsa veritatis natus quia qui culpa incidunt quasi totam? Dolorum atque, non totam.</span></p>
+    	<h2 class="text-center" id="about-me">About Me</h2>
+    	<p class="wrap text-center"><span>Let me introduce myself. My name is Igor, I'm 26 and I'm looking for a new opportunity to work in IT companies. My passion - it's writing code for Web applications. Cycling is something I love doing and always have, it helps me to keep focused and organised in both my personal and professional life, I have always been a keen reader i find it relaxing and keeps my mind really active.  
+			I am a quietly confident person, who strives to achieve the utmost to do well in everything I take on. From doing code I have gain in confidence, which has helped me to achieve successful work individually and also being comfortable in group situations when working or socially.Easily cooperating and collaborating in terms of teamwork. Scrupulously vigilant about the details.
+			The main rule for me - never rest on our laurels. I am always going to love and make my job that the customer was always happy.
+			Easily cooperating and collaborating in terms of teamwork. Scrupulously vigilant about the details.</span></p>
     </div> <!-- end col-sm-12 p-bottom -->
 	</div> <!-- end row -->
 
@@ -352,7 +363,7 @@
 <!-- Resource jQuery -->
 <script src="js/main.js"></script>
 <script src="js/scrollReveal.min.js?ver=2.1.0"></script>
-<script src="js/parallax.js" defer></script>
+<script src="js/parallax.min.js" defer></script>
 
 <script type="text/javascript">
       (function($) {

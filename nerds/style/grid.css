@@ -1,0 +1,80 @@
+
+  Your grid settings:
+  	columns: 3
+  	column width: 240px
+  	column margin: 80px
+  	container margin: 10px
+    
+=========================
+
+.wrapper {
+	margin: 0 auto; /* This centers the grid. Remove this line to place the grid on the left of the page. */
+	text-align: left;
+	width: 900px;
+	background-color: red;
+}
+
+.layout {
+    width: 880px;
+    margin: 0 auto;
+}
+
+
+
+
+.container {
+	clear: both;
+	float: left;
+	margin: 0 auto;
+	width: 100%;	
+}
+.one-col, .two-col, .three-col {
+	clear: none;
+	display: inline;/* IE double margin fix. Feel free to move this to your IE specific stylesheets. */
+	float: left;
+	margin: 0 80px 0 0;
+	padding: 0;
+	position: relative;
+}
+.one-col {
+	width: 240px;
+}
+
+.two-col {
+	width: 560px;
+}
+
+.three-col {
+	width: 880px;
+	margin-right: 0;
+}
+
+.prefix-one {
+	margin-left: 320px;
+}
+
+.prefix-two {
+	margin-left: 640px;
+}
+
+.suffix-one {
+	margin-right: 400px;
+}
+
+.suffix-two {
+	margin-right: 720px;
+}
+
+.clear { /* Useful generic clearing class. */
+	clear: both;
+}
+.last-col {
+	margin-right: 0;
+}
+.clearfix::after {
+    content: "\0020";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
