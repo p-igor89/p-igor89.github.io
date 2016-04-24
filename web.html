@@ -16,7 +16,27 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/modernizr.min.js"></script> <!-- Modernizr -->
 
-    
+  <script>
+	  
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	
+	  
+	</script> 
+    <style> [data-sr] { visibility: hidden; }  </style>
 </head>
 <body>
 
@@ -83,7 +103,7 @@
 						</a>
 					</li>
 					<li class='social-link social-link__git'>
-						<a href="https://github.com/" target="_blank">
+						<a href="https://github.com/p-igor89" target="_blank">
 							<img src="sprites/github.png" alt="github">
 						</a>
 					</li>
@@ -117,7 +137,7 @@
 	 <div class="container wrap" style="visibility: visible; ">
 	 <p>&nbsp;</p>
 
-	 <div class="row card">
+	 <div class="row card" style="visibility: visible; ">
 			<div class="col-md-4">
 				<h2>Barbershop</h2>
 				<p>My first experience in the creation site using technical documentation and PSD file.</p>
@@ -127,7 +147,7 @@
 			</div>
 		<div class="col-md-8 m-img-top"><img src="img/barbershop.jpg" class="img-responsive"></div>
 
-	<div class="col-md-4">
+	<div class="col-md-4" style="visibility: visible; ">
 		<h2>Pixelstudio</h2>
 		<p>The site, which was created on the IMT Academy courses. Responsive to the mobile site optimization.</p>
 		<p><strong>Functions</strong><br />HTML5 / CSS3 / JQuery</p>
@@ -136,7 +156,7 @@
 	</div>
 		<div class="col-md-8 m-img-top"><img src="img/pixelstudio.jpg" class="img-responsive"></div>
 	
-	<div class="col-md-4">
+	<div class="col-md-4" style="visibility: visible; ">
 		<h2>Sedona</h2>
 		<p>Using the PSD file and documentation was created this site to consolidate the material in IMT Academies.</p>
 		<p><strong>Functions</strong><br />HTML5 / CSS3 / JQuery</p>
@@ -145,7 +165,7 @@
 	</div>
 		<div class="col-md-8 m-img-top"><img src="img/sedona.jpg" class="img-responsive"></div>
 			
-	<div class="col-md-4">
+	<div class="col-md-4" style="visibility: visible; ">
 		<h2>Nerds</h2>
 		<p>First time using the preprocessor, which helped me to accelerate the development of the site by 30%</p>
 		<p><strong>Functions</strong><br />HTML5 / CSS3 / Scss </p>
@@ -154,7 +174,7 @@
 	</div>
 		<div class="col-md-8 m-img-top"><img src="img/nerds.jpg" class="img-responsive"></div>
         
-    <div class="col-md-4">
+    <div class="col-md-4" style="visibility: visible; ">
 		<h2>My portfolio</h2>
 		<p>My first experiment of creating personal pages Portfolio</p>
 		<p><strong>Functions</strong><br />HTML5 / CSS3 / Bootstrap / Jquery / JS </p>
@@ -197,7 +217,7 @@
 				</a>
 			</li>
 			<li class='social-link social-link__git'>
-				<a href="https://github.com/" target="_blank">
+				<a href="https://github.com/p-igor89" target="_blank">
 					<img src="sprites/github_blue.png" alt="github">
 				</a>
 			</li>
