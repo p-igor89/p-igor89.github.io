@@ -262,7 +262,7 @@ div.slider figure {
 
 
 /* mice panel */
-#mice { margin: 0 auto; padding-bottom: 8em;  padding-top: 275px; text-align: center; width: 20px; height: 9px; }
+#mice { margin: 0 auto; padding-bottom: 8em;  padding-top: 230px; text-align: center; width: 20px; height: 9px; }
 
 #mice span
 {
@@ -847,7 +847,6 @@ h2 {
     min-width: 120px;
 	text-transform: uppercase;
 	display: inline-block;
-	margin-top: 120px;
 }
 
 .ghost-button:hover, .ghost-button:active {
