@@ -1,0 +1,530 @@
+.wrapper {
+  height: 230px;
+  float: left;
+  width: 200px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+.robots .head {
+  width: 164px;
+  height: 100px;
+  background-color: #9474b5;
+  margin: 0 auto;
+}
+
+.robots .eyes {
+  width: 44px;
+  height: 30px;
+  margin-left: 20px;
+  background-color: #f5ba20;
+  float: left;
+  margin-top: 11px;
+}
+
+.robots .eyes .pupil {
+  width: 16px;
+  height: 21px;
+  background-color: #05010f;
+  float: right;
+  margin-top: 9px;
+}
+
+.robots .eyes .right-pupil {
+  float: left;
+}
+
+.robots .right-eyes {
+  float: right;
+  margin-right: 18px;
+}
+
+.robots .nose {
+  width: 54px;
+  height: 20px;
+  background-color: #fcc783;
+  display: inline-block;
+  margin-left: 56px;
+  margin-top: 6px;
+}
+
+.robots .nose .naris {
+  width: 10px;
+  height: 13px;
+  float: left;
+  background-color: #e6389a;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.robots .nose .right-naris {
+  float: right;
+  margin-right: 10px;
+}
+
+.robots .neck {
+  height: 13px;
+  width: 44px;
+  background-color: #9474b5;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.robots .neck .necklace {
+  height: 5px;
+  width: 44px;
+  background-color: #fcba1b;
+  margin-top: 4px;
+  position: absolute;
+}
+
+.robots .body {
+  width: 120px;
+  height: 116px;
+  background-color: #9474b5;
+  border-radius: 4px 4px 0 0;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.robots .circle {
+  width: 72px;
+  height: 72px;
+  background-color: #e73895;
+  border-radius: 50px;
+  margin-left: 28px;
+  position: absolute;
+  margin-top: 44px;
+}
+
+.robots .arm {
+  width: 14px;
+  height: 30px;
+  background-color: #9474b5;
+  border-radius: 4px 0 0 4px;
+  border-left: 7px solid #05010f;
+  display: inline-block;
+  margin-left: -19px;
+  margin-top: 13px;
+}
+
+.robots .right-arm {
+  transform: rotate(180deg);
+  margin-left: 118px;
+  position: absolute;
+}
+
+.robots .mouse {
+  height: 16px;
+  width: 125px;
+  background-color: #e1230d;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+
+.robots .mouse .teeth {
+  width: 11px;
+  height: 8px;
+  float: left;
+  background-color: #05010f;
+}
+
+.robots .mouse .upper-teeth:first-child {
+  margin-left: 18px;
+}
+
+.robots .mouse .upper-teeth:nth-child(5) {
+  margin-right: 5px;
+}
+
+.robots .mouse .upper-teeth:nth-child(6) {
+  margin-right: 0px;
+}
+
+.robots .mouse .upper-teeth {
+  margin-right: 8px;
+}
+
+.robots .mouse .lower-teeth {
+  background-color: white;
+  margin-left: 8px;
+}
+
+.robots .mouse .lower-teeth:last-child {
+  margin-right: 11px;
+}
+
+.hat {
+  transform: rotate(66deg);
+  width: 92px;
+  height: 114px;
+  background-color: black;
+  border-radius: 61px 0 0 61px;
+  margin-left: 26px;
+  margin-top: -9px;
+  position: relative;
+  z-index: 2;
+}
+
+.hat .white-part-in-hat {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  background-color: white;
+  border-radius: 48px 0 0 61px;
+  margin-left: 13px;
+  margin-top: 48px;
+}
+
+.hat .black-part-in-hat {
+  position: absolute;
+  width: 67px;
+  height: 60px;
+  background-color: black;
+  border-radius: 39px 2px 2px 80px;
+  margin-left: 13px;
+  margin-top: 43px;
+  left: -6px;
+}
+
+.hat .white-line-in-hat {
+  width: 103px;
+  height: 6px;
+  background-color: white;
+  transform: rotate(89deg);
+  position: absolute;
+  left: 28px;
+  margin-left: -4px;
+  margin-top: 53px;
+}
+
+.panda {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 90px;
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 113px;
+  top: 20px;
+  width: 7px;
+  height: 11px;
+  background: red;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-42deg);
+}
+
+.heart:after {
+  top: 21px;
+  left: 111px;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.panda .head {
+  transform: rotate(-2deg);
+  width: 153px;
+  height: 110px;
+  border-radius: 100px / 87px;
+  margin-left: 27px;
+  margin-top: -44px;
+  border: 5px solid black;
+  position: relative;
+}
+
+.panda .head .eye {
+  top: 46px;
+  display: block;
+  left: 14px;
+  transform: rotate(-19deg);
+  width: 49px;
+  height: 35px;
+  background-color: black;
+  border-radius: 108px / 76px;
+  position: absolute;
+}
+
+.panda .head .right-eyes {
+  transform: rotate(202deg);
+  top: 49px;
+  display: block;
+  left: 91px;
+  width: 49px;
+  height: 35px;
+  background-color: black;
+  border-radius: 108px / 76px;
+  position: absolute;
+}
+
+.shine-eyes {
+  left: 26px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #48c8f7;
+  position: absolute;
+  top: 9px;
+}
+
+.panda .pupil {
+  left: 19px;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #b4e4e9;
+  position: absolute;
+  top: 4px;
+}
+
+.panda .right-eyes .pupil {
+  left: 20px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #b4e4e9;
+  position: absolute;
+  top: 24px;
+}
+
+.panda .hand {
+  width: 34px;
+  height: 30px;
+  background-color: black;
+  border-radius: 21px 23px 26px 24px;
+  left: 29px;
+  top: 87px;
+  position: absolute;
+}
+
+.panda .right-hand {
+  transform: rotate(180deg);
+  left: 91px;
+  position: absolute;
+}
+
+.panda .ear {
+  top: -6px;
+  transform: rotate(39deg);
+  left: 128px;
+  width: 27px;
+  height: 23px;
+  background-color: black;
+  border-radius: 50% 50% 13% 9%;
+  position: absolute;
+}
+
+.panda .body {
+  width: 108px;
+  height: 42px;
+  position: absolute;
+  border: 4px solid black;
+  border-radius: 40px 31px 32px 15px;
+  left: 47px;
+  bottom: 7px;
+}
+
+.panda .leg {
+  width: 46px;
+  height: 37px;
+  background-color: black;
+  border-radius: 169px / 126px;
+  transform: rotate(24deg);
+  position: absolute;
+  left: -16px;
+  top: 15px;
+}
+
+.panda .right-leg {
+  left: 82px;
+  transform: rotate(170deg);
+  height: 38px;
+}
+
+.panda .nose {
+  top: 69px;
+  display: block;
+  left: 67px;
+  width: 15px;
+  height: 10px;
+  background-color: black;
+  border-radius: 108px / 76px;
+  position: absolute;
+  z-index: 2;
+}
+
+.panda .black-line {
+  top: 78px;
+  display: block;
+  left: 74px;
+  width: 2px;
+  height: 8px;
+  background: black;
+  position: absolute;
+  z-index: 2;
+}
+
+.panda .white-box {
+  position: absolute;
+  height: 15px;
+  width: 30px;
+  background: white;
+  z-index: 1;
+  top: 68px;
+  left: 60px;
+}
+
+.panda .smile {
+  left: 64px;
+  position: absolute;
+  border: 2px solid black;
+  width: 8px;
+  height: 7px;
+  border-radius: 50%;
+  bottom: 22px;
+}
+
+.panda .right-smile {
+  left: 74px;
+}
+
+.black-line-in-hat {
+  background: black;
+  transform: rotate(90deg);
+  width: 136px;
+  height: 13px;
+  position: absolute;
+  left: 18px;
+  top: 51px;
+}
+
+.circle-in-hat {
+  left: -8px;
+  width: 16px;
+  height: 21px;
+  background: black;
+  border-radius: 70% 45% 77% 47%;
+  position: absolute;
+  top: 0px;
+  transform: rotate(180deg);
+}
+
+.left-circle {
+  transform: rotate(132deg);
+  left: 124px;
+  top: 1px;
+}
+
+/* Cats */
+.cats #head {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #FFCF78;
+  margin: 0 auto;
+  border: 10px dotted #FFF9AB;
+  margin-top: 10%;
+  padding-top: 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.cats .eye {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  border: 5px solid white;
+  background-color: #4CAF50;
+  float: left;
+  box-sizing: content-box;
+  position: relative;
+  bottom: 58px;
+}
+
+.cats .popover {
+  height: 0px;
+  width: 75px;
+  margin-top: -10px;
+  margin-left: -10px;
+  position: absolute;
+  background-color: #FFCF78;
+  z-index: 2;
+}
+
+.cats #leftEye {
+  margin-left: 15px;
+}
+
+.cats #rightEye {
+  margin-left: 10px;
+}
+
+.cats .light {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 2px;
+  margin-top: 5px;
+}
+
+.cats .pupil {
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 50px;
+  left: 30px;
+  position: absolute;
+  height: 23px;
+  width: 15px;
+  border-radius: 50px;
+}
+
+.cats .mouse {
+  left: -61px;
+  transform: rotate(90deg);
+  float: left;
+  position: relative;
+  bottom: -33px;
+}
+
+.cats .mouse h1 {
+  font-size: 28px;
+  font-family: arial;
+  font-weight: 100px;
+  color: #AF7D23;
+  position: absolute;
+  opacity: .7;
+}
+
+.cats .ears {
+  width: 100%;
+  height: 90px;
+  background-color: #AF7D23;
+  position: absolute;
+  z-index: -1;
+  top: 1px;
+}
+
+.makets {
+  height: 250px;
+  padding-top: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+img {
+  width: 200px;
+  float: left;
+  margin-left: 30px;
+}
+
+p {
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 5px;
+}

@@ -1,0 +1,87 @@
+#animatedBlock {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+#animatedBlock {
+    animation-duration: 10s;
+    animation-name: changeColor;
+}
+@keyframes changeColor {
+    from {
+        background-color: red;
+    }
+    10% {
+        background-color: yellow;
+    }
+    50%{
+        height: 3px;
+        width: 3px;
+    }
+    30%{
+        background-color: green;
+    }
+    80%{
+        height: 100px;
+    }
+    to {
+        border-radius: 50px;
+        margin-left: 50%;
+        height: 100px;
+        width: 300px;
+        background: black;
+    }
+}
+/* cat */
+.cats .pupil {
+    animation-duration: 5s;
+    animation-name: movePupils;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+} 
+@keyframes movePupils {
+    from {
+        top:20px;
+        left: 10px;
+    }
+    50% {
+        top: 5px;
+        left: 25px;
+    }
+    70% {
+        top: 25px;
+        left: 20px;
+    }
+    to {
+        top: 20px;
+        left: 10px;
+    }
+}
+#leftEye .popover {
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-name: movePopover;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+#rightEye .popover{
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-name: movePopover;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+@keyframes movePopover {
+    from {
+        height: 0;
+    }
+    10% {
+        height: 80px;
+    }
+    20% {
+        height: 0px;
+    }
+    to {
+        height: 0px;
+    }
+}
