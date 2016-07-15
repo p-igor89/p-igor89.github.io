@@ -1,0 +1,143 @@
+
+
+/*Containers*/
+
+body{background:#333f35; font:normal bold 15px "Trebuchet MS"; color:#bcc09a}
+
+a{text-decoration:none; color:white}
+
+ul{list-style:none}
+
+#wrapper{
+	position:relative;
+	width:860px;
+	height:600px;
+	margin:0px auto
+}
+
+/*Game Table*/
+#table {
+	position:relative;
+	float:left;
+	width:860px;
+	height:600px;
+	background:url(../img/back1.jpg) no-repeat;
+}
+
+#table #resultMessage{
+    position:absolute;
+    left:250px;
+    top:430px;
+    width:100px;
+    background:#bcc09a;
+    border:3px double #333f35;
+    text-align:center;
+    padding:5px 0;
+    font-size:15px;
+    color:#333f35;
+    display:none;
+    font-weight: bolt;
+    font-family: 'Oswald', sans-serif;
+}
+	
+/*Bets and Money*/	
+#table #score{
+    float:left;
+    width:205px;
+    height:105px;
+    margin:45px 0 0 70px;
+    font-family: 'Oswald', sans-serif;
+}
+#score li{
+    float:left;
+    margin:6px 15px;
+    padding:0px 0 0 40px;
+}
+        
+#score li span{font-size:20px}
+#score li#money{background-position:top left}
+#score li#bet{background-position:bottom left}
+
+#table #chips{
+    position:absolute;
+    width:250px;
+    height:100px;
+    left:30px;
+    bottom:33px
+}
+
+#chips li{
+    position:relative;
+    float:left;
+    width:40px;
+    height:40px;
+    margin-left:15px;
+    cursor:pointer
+}
+    #chips .chip img{position:absolute; width:40px; height:40px}
+    #chips li.c10{margin-top:15px}
+    #chips li.c50{margin-top:30px}
+    #chips li.c100{margin-top:45px}
+
+/*Game Control*/			
+	
+#table #control{
+    position:absolute;
+    width:350px;
+    height:50px;
+    left:30%;
+    bottom:40px
+}
+	
+#control input{
+    float:left;
+    width:61px;
+    height:34px;
+    margin:6px 0 0 75px;
+    padding-top:3px;
+    text-align:center;
+    font-size:18px;
+    display:none;
+    background-color: #333F35;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    color: #bcc09a;
+    font-family: 'Oswald', sans-serif;
+}
+#control input:hover{
+    color: red;
+}
+/*#control div:hover{color:white}
+#control div:active{background:url(./img/controlOn.png) no-repeat}
+#control #hit, #control #stay{margin-left:75px}*/
+
+/*Game Field*/		
+
+	
+#gameField .cardM{
+    position:absolute; 
+    top:50px; 
+    right:100px; 
+    display:none;
+    z-index:200
+}
+
+.curValue{
+    position:absolute;
+    left:320px;
+    top:20px;
+    font-size:22px;
+    color:#C18D53;
+    z-index:4
+}
+
+.curValue.player{top:400px}
+
+#control #deal {
+    margin: 6px 0 0 140px;
+}
+img {
+    width: 50px;
+}
+

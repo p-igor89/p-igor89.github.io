@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack/</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+</head>
+<body>
+    <div id="wrapper">
+    <div id="table">	
+        <div id="score">
+            <ul>
+                <li id="money">MONEY: <span>1000</span>$</li>
+                <li id="bet">BET: <span>0</span>$</li>
+            </ul>
+        </div>
+        <div id="shoe"></div>
+        <div id="resultMessage"></div>
+        <div class="curValue player"></div>
+        <div class="curValue diller"></div>
+
+        <div id="players"></div>
+        <div id="chips">
+            <ul>
+                <li class="chip c5"><img src="img/chips/c5.png" alt="5chip"/></li>
+                <li class="chip c10"><img src="img/chips/c10.png" alt="10chip"/></li>
+                <li class="chip c50"><img src="img/chips/c50.png" alt="50chip"/></li>
+                <li class="chip c100"><img src="img/chips/c100.png" alt="100chip"/></li>
+            </ul>
+        </div>
+        <div id="gameField"></div>
+        <div id="control">
+            <input type="button" id="hit" class="btn" value="HIT">
+            <input type="button" id="deal" class="btn" value="DEAL">
+            <input type="button" id="stay" class="btn" value="STAY">
+            <!--<div id="hit">HIT</div>
+            <div id="deal">DEAL</div>
+            <div id="stay">STAY</div>-->
+        </div>
+    </div><!--end of table-->	
+	</div><!--end of wrapper-->
+</body>
+</html>
