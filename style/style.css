@@ -845,8 +845,9 @@ h2 {
     text-decoration: none;
     font-family: "HelveticaLTStd-Roman", Arial, sans-serif;
     min-width: 120px;
-	text-transform: uppercase;
-	display: inline-block;
+    text-transform: uppercase;
+    display: inline-block;
+    z-index: 100;
 }
 
 .ghost-button:hover, .ghost-button:active {
