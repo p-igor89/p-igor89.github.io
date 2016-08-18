@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>Snake - the game</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<div class="settings">
+		<div class="setting close">
+			<a href="#">Скрыть настройки</a>
+		</div>
+		<div class="form-wrapper">
+			<form>
+				<p>Параметры игрового поля:</p>
+				<label for="fieldX">Ширина:</label>
+				<input type="text" value="20" name="sizeX" id="fieldX">
+				<label for="fieldY">Высота:</label>
+				<input type="text" value="20" name="sizeY" id="fieldY"><br>
+				<label for="borders">Стены</label>
+				<input type="checkbox" name="walls" id="borders"><br>
+				<p>Параметры змейки:</p>
+				<label for="snakeSpeed">Скорость змейки:</label><br>
+				<input type="range" min="100" max="500" step="100" value="100" name="speed" id="snakeSpeed"><br>
+				<input type="button" value="Применить изменения">
+				<input type="reset" value="Очитстиь форму">
+			</form>
+		</div>
+	</div>
+	<div class="setting open">
+		<a href="#">Настройки</a>
+	</div>
+	<div id="conteiner" class="field"></div>
+	<div class="finish">
+		<p></p><br>
+		<a href="#">Начать заново</a>
+	</div>
+	<!-- Запилить include -->
+	<script type="text/javascript" src="scripts/jquery/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="scripts/config.js"></script>
+	<script type="text/javascript" src="scripts/settings.js"></script>
+	<script type="text/javascript" src="scripts/intRandom.js"></script>
+	<script type="text/javascript" src="scripts/field.js"></script>
+	<script type="text/javascript" src="scripts/сell.js"></script>
+	<script type="text/javascript" src="scripts/horizontal-line.js"></script>
+	<script type="text/javascript" src="scripts/vertical-line.js"></script>
+	<script type="text/javascript" src="scripts/snake.js"></script>
+	<script type="text/javascript" src="scripts/food.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
