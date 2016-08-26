@@ -37,7 +37,7 @@ $(document).ready(function() {
         nav : true,
         navText : "",
         loop : true,
-        autoplay : false,
+        autoplay : true,
         autoplayHoverPause : true,
         fluidSpeed : 600,
         autoplaySpeed : 600,
